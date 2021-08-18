@@ -1,0 +1,113 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+h1{
+    width: 100%;
+    text-align: center;
+}
+hr{
+    width: 80%;
+}
+form#form-register{
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+form input{
+    color: #3EB595;
+    width: 90%;
+    height: 2.15rem;
+    border: none;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transition: all .1s ease-in-out;
+}
+form input:focus{
+    border-bottom: 3px solid #3EB595;
+    outline: #3EB595;
+}
+section#buttons-register{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+form button.button-register{
+    width: 30%;
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    background-color: white;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+i.fa-trash{
+    color: #D90B1C;
+}
+i.fa-share-square{
+    color: #3EB595;
+}
+form button#button-delete:hover{
+    background-color: #D90B1C;
+}
+form button#button-submit:hover{
+    background-color: #3EB595;
+}
+form button#button-delete:hover .fa-trash{
+    color: whitesmoke;
+}
+form button#button-submit:hover i.fa-share-square{
+    color: whitesmoke;
+}
+
+i.fa-user-alt{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3EB595;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+i.fa-envelope{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3EB595;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+i.fa-lock{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3EB595;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+@media screen and (min-width: 1200px) {
+    form button.button-register{
+        width: 20%;
+    }
+}

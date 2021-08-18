@@ -1,0 +1,14 @@
+body {
+    font-family: 'Oswald';
+    background-color: #D0F2F2;
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+html{
+    scroll-behavior: smooth;  
+}
+/* esto suaviza el scroll de la pagina */

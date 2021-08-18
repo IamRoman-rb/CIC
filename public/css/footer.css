@@ -1,0 +1,98 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: #7ED9D9;
+    /* background-color: rgb(46, 43, 226); */
+}
+h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+section#contactos{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+section#contactos p{
+    padding: 0.2rem;
+}
+section#contactos p a{
+    color: black;
+    transition: all .3s ease-in-out;
+}
+section#contactos p a:hover{
+    color: #048ABF;
+}
+hr{
+    width: 80%;
+    height: 0.08rem;
+    background-color: black;
+    margin: auto;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+textarea#comentario{
+    display: flex;
+    width: 40vw;
+    height: 3rem;
+    padding-top: 0.9rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    resize: none;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100);
+    transition: all .1s ease-in-out;
+}
+textarea#comentario:focus{
+    border-bottom: 3px solid #048ABF;
+    outline: #048ABF;
+}
+section#comentarios button{
+    width: 5rem;
+    height: 3rem;
+    background-color: #048ABF;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: white;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+section#comentarios button:hover{
+    background-color: #FFEB4D;
+    color: black;
+}
+section#copy{
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    text-align: center;
+}
+section#copy p{
+    padding: 0.3rem;
+}
+@media screen and (min-width: 768px) {
+    hr{
+        margin: auto;
+        width: 55%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    section#copy{
+        align-items: center;
+        flex-flow: row wrap;
+        margin-bottom: 1rem;
+    }
+    section#copy p{
+        padding: 0.5rem;
+    }
+}

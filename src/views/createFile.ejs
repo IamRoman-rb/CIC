@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("partials/headCreatFile") %> 
+<body>
+    <%- include ("partials/header") %> 
+    <main>
+        <h1>Crea Una Tarea Nueva</h1>
+        <hr>
+        <form action="" id="form-create-file">
+            <i class="fas fa-book"></i><input type="text" class="formulario" placeholder="Titulo de la tarea/trabajo">
+            <i class="fas fa-stopwatch"></i><input type="text" class="formulario" placeholder="Fecha de entrega">
+            <i class="fas fa-user-alt"></i><input type="text" class="formulario" placeholder="Nombre de el/la profesor/a">
+            <label id="file">
+                <i class="fas fa-file-upload"></i><input type="file" id="files" accept=".png, .jpg, text, mp4, ">
+            </label>
+            <section id="formularios">
+                <form action="">
+                    <select name="" id="selectores">
+                        <option value="" disabled>.</option>
+                        <option value="">Ciclo</option>
+                        <option value="">Primaria</option>
+                        <option value="">Secundaria</option>
+                    </select>
+                    <select name="" id="selectores">
+                        <option value="" disabled>.</option>
+                        <option value="">Año</option>
+                        <option value="">1ro</option>
+                        <option value="">2do</option>
+                        <option value="">3ro</option>
+                        <option value="">4to</option>
+                        <option value="">5to</option>
+                        <option value="">6to</option>
+                    </select>
+                </form>
+            </section>
+            <section id="send-file-buttons">
+                <button type="reset" class="button-file" id="button-delete"><i class="fas fa-trash"></i></button>
+                <button type="submit" class="button-file" id="button-submit"><i class="fas fa-share-square"></i></button>
+            </section>
+        </form>
+    </main>
+    <%- include ("partials/footer") %> 
+</body>
+</html>

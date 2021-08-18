@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/headCreateNews")  %> 
+<body>
+    <%- include("partials/header")  %> 
+    <main>
+        <h1>Crear noticia</h1>
+        <form action="" id="create-news">
+            <label id="news">
+                <i class="fas fa-images"></i><input type="file" id="news" accept=".png, .jpg">
+            </label>
+            <input type="text" placeholder="Titulo de la noticia" class="input-form"> 
+            <input type="date" class="input-form">
+            <textarea name="" id="" cols="30" rows="10" class="input-form" placeholder="Info de la noticia"></textarea>
+            <section id="buttons-news">
+                <button type="reset" class="button-new" id="delete-new"><i class="fas fa-ban"></i></button>
+                <button type="submit" class="button-new" id="submit-new"><i class="far fa-newspaper"></i></button>
+            </section>
+        </form>
+    </main>
+    <%- include("partials/footer")  %> 
+</body>
+</html>
