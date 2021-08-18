@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": 1,
+        "name": "Tarea",
+        "description": "Tarea de prueba",
+        "date": "2021-08-1",
+        "teacher": 1,
+        "subject": 1,
+        "curse": 1,
+        "status": "Pendiente",
+        "documents":[],
+        "files":[],
+        "audios":[],
+        "videos":[],
+        "images":[]
+    }
+]

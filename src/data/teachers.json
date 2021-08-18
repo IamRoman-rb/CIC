@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "name":"Profesor 1",
+        "email":"profesor1@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[1,2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    }
+]

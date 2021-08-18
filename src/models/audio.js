@@ -2,8 +2,8 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = {
-    directory: path.resolve(__dirname, "..data", "levels.json"),
-    all: () => {
+    directory: path.resolve(__dirname, "..data", "audios.json"),
+    all: (req, res) => {
         const file = fs.readFileSync(this.directory);
         return JSON.parse(file);
     },
