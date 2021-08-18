@@ -4,5 +4,143 @@
         "name": "Ingles",
         "level": [2],
         "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 2,
+        "name": "Ambiente y Sociedad",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 3,
+        "name": "Genetica",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 4,
+        "name": "Matematica",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 5,
+        "name": "Ed. Fisica",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 6,
+        "name": "Quimica",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 7,
+        "name": "Filosofia",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 8,
+        "name": "Trabajo y Ciudadania",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 9,
+        "name": "Literatura",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 10,
+        "name": "Cs. de la Tierra",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 11,
+        "name": "Politica y Ciudadania",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 12,
+        "name": "Biologia",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 13,
+        "name": "Fisica",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 14,
+        "name": "Arte",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 15,
+        "name": "Historia",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 16,
+        "name": "Geografia",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 17,
+        "name": "SADO",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 18,
+        "name": "Tecnologia",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 19,
+        "name": "Construccion Ciudadana",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 20,
+        "name": "Fisico Quimica",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 21,
+        "name": "",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 22,
+        "name": "C. C.",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 23,
+        "name": "Cs. Naturales",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
+    },
+    {
+        "id": 24,
+        "name": "Cs. Sociales",
+        "level": [2],
+        "curses": [1,2,3,4,5,6]
     }
 ]

@@ -1,11 +1,301 @@
 [
     {
-        "id":1,
-        "name":"Profesor 1",
-        "email":"profesor1@cic.com",
+        "id": 1,
+        "name":"Mecha",
+        "email":"mecha@cic.com",
         "password":"12345",
         "role":"profesor",
-        "levels":[1,2],
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 2,
+        "name":"Hugo",
+        "email":"hugo@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 3,
+        "name":"Anneris",
+        "email":"anneris@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 4,
+        "name":"Lorena",
+        "email":"lorena@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 5,
+        "name":"Facundo",
+        "email":"facundo@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 6,
+        "name":"Karina",
+        "email":"karina@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 7,
+        "name":"Maximiliano",
+        "email":"maximiliano@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 8,
+        "name":"Rosana",
+        "email":"rosana@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 9,
+        "name":"Corina",
+        "email":"corina@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 10,
+        "name":"Daniela",
+        "email":"daniela@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 10,
+        "name":"Paula",
+        "email":"paula@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 11,
+        "name":"Estrella",
+        "email":"estrella@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 12,
+        "name":"Andrea",
+        "email":"andrea@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 13,
+        "name":"Camila",
+        "email":"camila@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 14,
+        "name":"German",
+        "email":"german@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 15,
+        "name":"Isabel",
+        "email":"isabel@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 16,
+        "name":"Alicia",
+        "email":"alicia@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 17,
+        "name":"Lala",
+        "email":"lala@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 18,
+        "name":"Jimena",
+        "email":"jimena@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 19,
+        "name":"Christian",
+        "email":"christian@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 20,
+        "name":"Ines",
+        "email":"ines@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 21,
+        "name":"Carolina",
+        "email":"carolina@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 22,
+        "name":"Maricel",
+        "email":"maricel@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 23,
+        "name":"Andrea V.",
+        "email":"andreaV@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 24,
+        "name":"Guadalupe",
+        "email":"guadalupe@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 25,
+        "name":"Marcela",
+        "email":"marcela@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 26,
+        "name":"Christian G.",
+        "email":"christianG@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 27,
+        "name":"Sergio",
+        "email":"sergio@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 28,
+        "name":"Sandra",
+        "email":"sandra@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
+        "curses":[1,2,3,4,5,6],
+        "subjects": [1]
+    },
+    {
+        "id": 29,
+        "name":"Javier",
+        "email":"javier@cic.com",
+        "password":"12345",
+        "role":"profesor",
+        "levels":[2],
         "curses":[1,2,3,4,5,6],
         "subjects": [1]
     }
