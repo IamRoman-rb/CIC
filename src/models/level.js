@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 const modelLevel = {
-    directory: path.resolve(__dirname, "..data", "levels.json"),
+    directory: path.resolve(__dirname, "../data", "levels.json"),
     levelStorage: path.resolve(__dirname, "../../public/updates/leves"),
     all: () => {
         const file = fs.readFileSync(modelLevel.directory);
