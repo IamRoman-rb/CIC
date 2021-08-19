@@ -15,4 +15,4 @@ const model = {
     searchByField: (field,value) => model.allWidthExtra().find(course => course[field] == value)
 }
 
-module.export = model
+module.exports = model
