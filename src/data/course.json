@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Primer Grado",
+        "level": 1
+    },
+    {
+        "id": 2,
+        "name": "Segundo Grado",
+        "level": 1
+    },
+    {
+        "id": 3,
+        "name": "Tercer Grado",
+        "level": 1
+    },
+    {
+        "id": 4,
+        "name": "Cuarto Grado",
+        "level": 1
+    },
+    {
+        "id": 5,
+        "name": "Quinto Grado",
+        "level": 1
+    },
+    {
+        "id": 6,
+        "name": "Sexto Grado",
+        "level": 1
+    },
+    {
+        "id": 7,
+        "name": "Primer Año",
+        "level": 2
+    },
+    {
+        "id": 8,
+        "name": "Segundo Año",
+        "level": 2
+    },
+    {
+        "id": 9,
+        "name": "Tercer Año",
+        "level": 2
+    },
+    {
+        "id": 10,
+        "name": "Cuarto Año",
+        "level": 2
+    },
+    {
+        "id": 11,
+        "name": "Quinto Año",
+        "level": 2
+    },
+    {
+        "id": 12,
+        "name": "Sexto Año",
+        "level": 2
+    }
+]
