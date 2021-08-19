@@ -1,9 +1,9 @@
-const homewordk = require("../models/homewordks");
+const homework = require("../models/homework");
 
 const controller = {
     
     index: (req, res) => {
-        return res.render("index", {homewordk: homewordk.all()})
+        return res.render("index", {homeworks: homework.all()})
     },
     login: (req, res) => {
         return res.render("login")

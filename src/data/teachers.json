@@ -4,7 +4,7 @@
         "name":"Mecha",
         "email":"mecha@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8, 10, 11, 12],
         "subjects": [6, 12, 20, 23]
@@ -14,7 +14,7 @@
         "name":"Hugo",
         "email":"hugo@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[8 , 9, 12],
         "subjects": [4]
@@ -24,7 +24,7 @@
         "name":"Anneris",
         "email":"anneris@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[10, 11, 12],
         "subjects": [13, 26]
@@ -34,7 +34,7 @@
         "name":"Lorena",
         "email":"lorena@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[10, 11, 12],
         "subjects": [1, 8, 11]
@@ -44,7 +44,7 @@
         "name":"Facundo",
         "email":"facundo@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[8, 10, 11, 12],
         "subjects": [2, 16]
@@ -54,7 +54,7 @@
         "name":"Karina",
         "email":"karina@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[11, 12],
         "subjects": [3, 10]
@@ -64,7 +64,7 @@
         "name":"Maximiliano",
         "email":"maximiliano@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[10, 11 ,12],
         "subjects": [5]
@@ -74,7 +74,7 @@
         "name":"Rosana",
         "email":"rosana@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[12],
         "subjects": [7]
@@ -84,7 +84,7 @@
         "name":"Corina",
         "email":"corina@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8, 10, 12],
         "subjects": [9]
@@ -94,7 +94,7 @@
         "name":"Daniela",
         "email":"daniela@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 10, 11],
         "subjects": [4]
@@ -104,7 +104,7 @@
         "name":"Paula",
         "email":"paula@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8, 9, 10, 11],
         "subjects": [15, 16, 24]
@@ -114,7 +114,7 @@
         "name":"Estrella",
         "email":"estrella@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[11],
         "subjects": [14]
@@ -124,7 +124,7 @@
         "name":"Andrea",
         "email":"andrea@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[9],
         "subjects": [9]
@@ -134,7 +134,7 @@
         "name":"Camila",
         "email":"camila@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[9, 10],
         "subjects": [12, 17]
@@ -144,7 +144,7 @@
         "name":"German",
         "email":"german@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[10],
         "subjects": [18]
@@ -154,7 +154,7 @@
         "name":"Isabel",
         "email":"isabel@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8, 9],
         "subjects": [1]
@@ -164,7 +164,7 @@
         "name":"Alicia",
         "email":"alicia@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[9],
         "subjects": [15]
@@ -174,7 +174,7 @@
         "name":"Lala",
         "email":"lala@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 9],
         "subjects": [14, 19]
@@ -184,7 +184,7 @@
         "name":"Jimena",
         "email":"jimena@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[9],
         "subjects": [15]
@@ -194,7 +194,7 @@
         "name":"Christian",
         "email":"christian@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[8, 9],
         "subjects": [5]
@@ -204,7 +204,7 @@
         "name":"Ines",
         "email":"ines@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[9],
         "subjects": [1]
@@ -214,7 +214,7 @@
         "name":"Carolina",
         "email":"carolina@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[8],
         "subjects": [22]
@@ -224,7 +224,7 @@
         "name":"Maricel",
         "email":"maricel@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8],
         "subjects": [20]
@@ -234,7 +234,7 @@
         "name":"Andrea V.",
         "email":"andreaV@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[8],
         "subjects": [12]
@@ -244,7 +244,7 @@
         "name":"Guadalupe",
         "email":"guadalupe@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8],
         "subjects": [1]
@@ -254,7 +254,7 @@
         "name":"Marcela",
         "email":"marcela@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7, 8],
         "subjects": [21]
@@ -264,7 +264,7 @@
         "name":"Christian G.",
         "email":"christianG@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7],
         "subjects": [5]
@@ -274,7 +274,7 @@
         "name":"Sergio",
         "email":"sergio@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7],
         "subjects": [22]
@@ -284,7 +284,7 @@
         "name":"Sandra",
         "email":"sandra@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7],
         "subjects": [5]
@@ -294,7 +294,7 @@
         "name":"Javier",
         "email":"javier@cic.com",
         "password":"12345",
-        "role":"profesor",
+        "role": 4,
         "levels":[2],
         "curses":[7],
         "subjects": [24]

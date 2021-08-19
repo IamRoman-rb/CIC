@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Director-Directora"
+    },
+    {
+        "id": 2,
+        "name": "Preceptor-Preceptora"
+    },
+    {
+        "id": 3,
+        "name": "Secretario-Secretaria"
+    },
+    {
+        "id": 4,
+        "name": "Profesor-Profesora"
+    },
+    {
+        "id": 5,
+        "name": "Vicedirector-Vicedirectora"
+    }
+]
