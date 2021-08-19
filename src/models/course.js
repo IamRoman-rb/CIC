@@ -3,7 +3,7 @@ const fs = require("fs");
 const levelModel = require("./level");
 
 const model = {
-    directory: path.resolve(__dirname, "../data", "curses.json"),
+    directory: path.resolve(__dirname, "../data", "courses.json"),
     all: function () {
         const file = fs.readFileSync(this.directory);
         return JSON.parse(file);
