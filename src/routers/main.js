@@ -6,9 +6,10 @@ const controlador = require("../controllers/mainController");
 
 //Websites Routers
 app.get("/", controlador.index);
-app.get("/login", controlador.login);
-app.get("/register", controlador.register);
+
 app.get("/createFile", controlador.createFile);
 app.get("/createNews", controlador.createNews);
 
 module.exports = (app);
+
+//Reemplaza router file por homework, crear new, 
