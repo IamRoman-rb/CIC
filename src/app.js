@@ -27,10 +27,15 @@ app.use(session({
 }));
 
 //Middlewares Customs
-//app.use(require("./middlewares/"));
+
+app.use(require("./middlewares/styles"));
 
 //Websites Routes Requires
 const main = require("./routers/main");
 app.use(main);
-// const user = require("./routers/user");
-// app.use(user); 
+const user = require("./routers/user");
+app.use ("/usuario", user);
+const homeworks = require("./routers/homeworks");
+app.use ("/tareas", homeworks); 
+const blog = require("./routers/blog");
+app.use ("/noticias", blog); 

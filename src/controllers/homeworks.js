@@ -1,12 +1,12 @@
-const blog = {
+const controller = {
     index: (req,res) => {
-        return res.render("blog/index",{})
+        return res.render("homeworks/index",{})
     },
     create: (req,res) => {
-        return res.render("blog/create",{})
+        return res.render("homeworks/create",{})
     },
     edit: (req,res) => {
-        return res.render("blog/edit",{})
+        return res.render("homeworks/edit",{})
     },
     store: (req,res) => {
         return res.send({data:req.body})
@@ -19,4 +19,4 @@ const blog = {
     }
 }
 
-module.exports = blog
+module.exports = controller

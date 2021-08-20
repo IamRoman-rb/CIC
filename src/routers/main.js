@@ -1,10 +1,7 @@
-const path = require("path")
-const express = require("express");
-const app = express.Router();
+const {Router} = require("express");
+const router = Router();
+const main = require("../controllers/main");
 
-const controlador = require("../controllers/main");
+router.get("/", main.index);
 
-//Websites Routers
-app.get("/", controlador.index);
-
-module.exports = (app);
+module.exports = router;
