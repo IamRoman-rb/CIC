@@ -3,7 +3,7 @@ const controller = {
         return res.render("homeworks/index",{})
     },
     create: (req,res) => {
-        return res.render("homeworks/create",{})
+        return res.render("homeworks/create")
     },
     edit: (req,res) => {
         return res.render("homeworks/edit",{})
