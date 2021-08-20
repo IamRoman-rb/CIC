@@ -5,12 +5,6 @@ const controller = {
     index: (req, res) => {
         return res.render("index", {homeworks: homework.all()})
     },
-    login: (req, res) => {
-        return res.render("login")
-    },
-    register: (req, res) => {
-        return res.render("register")
-    },
     createFile: (req, res) => {
         return res.render("createFile")
     },
@@ -19,4 +13,4 @@ const controller = {
     }
 }
 
-module.exports = (controller);
+module.exports = controller;

@@ -32,5 +32,5 @@ app.use(session({
 //Websites Routes Requires
 const main = require("./routers/main");
 app.use(main);
-// const user = require("./routers/user");
-// app.use(user); 
+const user = require("./routers/user");
+app.use ("/usuario", user); 
