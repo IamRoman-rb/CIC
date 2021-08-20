@@ -1,12 +1,12 @@
 const blog = {
     index: (req,res) => {
-        return res.render("blog/index",{})
+        return res.render("blogs/index",{})
     },
     create: (req,res) => {
-        return res.render("blog/create",{})
+        return res.render("blogs/create",{})
     },
     edit: (req,res) => {
-        return res.render("blog/edit",{})
+        return res.render("blogs/edit",{})
     },
     store: (req,res) => {
         return res.send({data:req.body})
