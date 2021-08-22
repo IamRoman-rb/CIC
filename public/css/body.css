@@ -12,3 +12,28 @@ html{
     scroll-behavior: smooth;  
 }
 /* esto suaviza el scroll de la pagina */
+
+article#contenedor_carga{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: all 1s ease-in-out;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+#carga{
+  border: 1.2rem solid whitesmoke;
+  border-top-color: #048ABF;
+  border-top-style: groove;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 100%;
+  position: absolute;
+  animation: girar 1.5s linear infinite;
+}
+@keyframes girar {
+  form{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}

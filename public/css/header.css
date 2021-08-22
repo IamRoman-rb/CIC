@@ -13,10 +13,22 @@ p#mensaje-bienvenida{
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
+    color: rgba(0, 0, 0, 0);
+    animation-name: hello;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes hello {
+    0%{ color:rgba(0, 0, 0, 0);}
+    50%{ color:rgba(0, 0, 0, 0.5);}
+    100%{ color:rgba(0, 0, 0, 1);}
 }
 nav#icons{
     display: none;
-    transition: all .5s ease-in-out;
 }
 nav#icons:target{
     width: 100vw;
