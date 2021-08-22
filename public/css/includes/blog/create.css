@@ -9,9 +9,14 @@ h1{
     text-align: center;
 }
 form#create-news{
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+}
+section#button-img{
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 label#news {
@@ -39,7 +44,8 @@ form input{
     width: 90%;
     height: 2.15rem;
     border: none;
-    border-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     transition: all .1s ease-in-out;
@@ -50,6 +56,32 @@ form input:focus{
 }
 form input.input-form{
     background-color: white;
+}
+i.fa-book-reader{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #56268D;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+i.fa-calendar-alt{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #56268D;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
 }
 textarea{
     color: #56268D;
@@ -80,7 +112,7 @@ form button.button-new{
 i.fa-ban{
     color: #D90B1C;
 }
-i.fa-newspaper{
+section i.fa-newspaper{
     color: #3EB595;
 }
 form button#delete-new:hover{

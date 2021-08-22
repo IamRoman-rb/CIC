@@ -5,6 +5,7 @@ header{
     align-items: center;
     flex-flow: row wrap;
     background-color: #7ED9D9;
+    position: sticky;
     /* padding: 0.5rem; */
     /* border-bottom: 1px solid black; */
 }
@@ -42,6 +43,7 @@ nav#burguer-menu a{
 @media screen and (min-width: 768px) {
     figure#image img{
         width: 15vw;
+        margin-left: 2rem;
     }
     p#mensaje-bienvenida{
         text-align: center;
@@ -51,31 +53,42 @@ nav#burguer-menu a{
     nav#icons{
         display: flex;
         width: 13vw;
+        margin-right: 3rem;
     }
     i.fa-home{
         border: 1px solid #048ABF;
         border-radius: 100%;
         color: #048ABF;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0.5rem;
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem 0 0;
         transition: all .3s ease-in-out;
     }
     i.fa-user{
         border: 1px solid #048ABF;
         border-radius: 100%;
         color: #048ABF;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0.5rem;
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem 0 0;
         transition: all .3s ease-in-out;
     }
     i.fa-plus{
         border: 1px solid #048ABF;
         border-radius: 100%;
         color: #048ABF;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0.5rem;
+        margin: 0 .5rem 0 0;
+        transition: all .3s ease-in-out;
+    }
+    header i.fa-newspaper{
+        border: 1px solid #048ABF;
+        border-radius: 100%;
+        color: #048ABF;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        /* padding-right: 1rem; */
         margin: 0 1rem 0 0;
         transition: all .3s ease-in-out;
     }
@@ -94,6 +107,11 @@ nav#burguer-menu a{
         color: #FFEB4D;
         transform: scale(1.1);
     }
+    header i.fa-newspaper:hover{
+        border: 1px solid #FFEB4D;
+        color: #FFEB4D;
+        transform: scale(1.1);
+    }
     #burguer-menu{
         width: 100%;
         height: 4rem;
@@ -104,12 +122,16 @@ nav#burguer-menu a{
     }
 }
 @media screen and (min-width: 1200px) {
+    figure#image img{
+        margin-left: 0;
+    }
     p#mensaje-bienvenida{
         font-size: 1.5rem;
+        margin-left: 3.5rem;
     }
     nav#icons{
-        display: flex;
-        width: 14vw;
+        width: 20vw;
+        margin-right: 0;
     }
     i.fa-home{
         font-size: 2rem;
@@ -118,6 +140,15 @@ nav#burguer-menu a{
     i.fa-user{
         font-size: 2rem;
         padding: 0.5rem;
+    }
+    i.fa-plus{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    header i.fa-newspaper{
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin-right: 0;
     }
     #burguer-menu{
         display: none;

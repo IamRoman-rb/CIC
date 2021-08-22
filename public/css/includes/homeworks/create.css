@@ -55,16 +55,17 @@ form input:focus{
 section#formularios{
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
 }
-select#selectores{
-    width: 30vw;
+select.selectores{
+    width: 50vw;
     border: none; 
     background-color: white;
     border-radius: 1rem;
-    margin: 0 2rem;
+    margin: 0 2rem 1rem 2rem;
     padding: 0.3rem;
 }
-select#selectores:focus{
+select.selectores:focus{
     outline: none;
 }
 section#send-file-buttons{
@@ -145,12 +146,15 @@ i.fa-user-alt{
     section button.button-file{
         width: 12%;
     }
-    select#selectores{
-        width: 25vw;
+    section button.button-file{
+    width: 25%;
     }
 }
 @media screen and (min-width: 1200px) {
     section button.button-file{
         width: 15%;
+    }
+    section button.button-file{
+        width: 25%;
     }
 }
