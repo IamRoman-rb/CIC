@@ -5,7 +5,6 @@ header{
     align-items: center;
     flex-flow: row wrap;
     background-color: #7ED9D9;
-    position: sticky;
     /* padding: 0.5rem; */
     /* border-bottom: 1px solid black; */
 }
@@ -20,8 +19,48 @@ p#mensaje-bienvenida{
 }
 nav#icons{
     display: none;
+    transition: all .5s ease-in-out;
 }
+nav#icons:target{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(208, 242, 242, .9);
+    z-index: 10;
+}
+i.fa-times{
+    font-size: 1.5rem;
+    color: #D90B1C;
+    transition: all .3s ease-in-out;
+}
+i.fa-times:hover{
+    color: #aa0715;
+}
+nav#icons a:not([href = "#"]){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 100%;
+    border: 0.25rem solid #048ABF;
+    color: #048ABF;
+    transition: all .3s ease-in-out;
+}
+nav#icons a:not([href = "#"]):hover{
+    border: 0.25rem solid #FFEB4D;
+    color: #FFEB4D;
 
+}
 i.fa-bars{
     color: white;
     margin: auto;
