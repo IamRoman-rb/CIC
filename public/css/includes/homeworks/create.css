@@ -38,9 +38,10 @@ form#form-create-file{
     justify-content: center;
 }
 form input{
-    color: #D90B1C;
     width: 90%;
     height: 2.15rem;
+    color: #D90B1C;
+    background-color: white;
     border: none;
     border-top-right-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;

@@ -14,9 +14,10 @@ p#mensaje-bienvenida{
     font-size: 1.2rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0);
+    /* margin-right: 3rem; */
     animation-name: hello;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-delay: 1s;
     animation-direction: initial;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
@@ -90,13 +91,13 @@ nav#burguer-menu a{
 }
 @media screen and (min-width: 768px) {
     figure#image img{
-        width: 15vw;
         margin-left: 2rem;
     }
     p#mensaje-bienvenida{
         text-align: center;
         font-size: 1.2rem;
         font-weight: 400;
+        margin-right: 0;
         margin-left: 3.5rem;
     }
     nav#icons{
@@ -115,11 +116,12 @@ nav#burguer-menu a{
 }
 @media screen and (min-width: 1200px) {
     figure#image img{
+        width: 10vw;
         margin-left: 0;
     }
     p#mensaje-bienvenida{
         font-size: 1.5rem;
-        margin-left: 3.5rem;
+        margin-left: 4rem;
     }
     nav#icons{
         margin-top: 0; 
