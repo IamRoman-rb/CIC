@@ -1,6 +1,6 @@
 const controller = {
     index: (req,res) => {
-        return res.render("homeworks/index",{})
+        return res.render("homeworks/list",{})
     },
     show: (req,res) => {
         return res.render("homeworks/detail",{})
