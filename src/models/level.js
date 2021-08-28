@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const modelLevel = {
     directory: path.resolve(__dirname, "../data", "levels.json"),
-    levelStorage: path.resolve(__dirname, "../../public/updates/leves"),
+    levelStorage: path.resolve(__dirname, "../../public/updates/levels"),
     all: () => JSON.parse(fs.readFileSync(modelLevel.directory)),
     one: id => modelLevel.all().find(element => element.id == id),
     filter: (field,value) => modelLevel.all().filter(element => element[field] == value),  //metodo search y exist
