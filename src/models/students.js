@@ -23,7 +23,13 @@ const model = {
         let students = model.all();
         let studentSelected = model.one(id);
         model.write(students.map(student => student.id === studentSelected.id ? Object.assign(student,{...data}): student))
+    },
+    disabled: id => {
+        let students = model.all();
+        let studentSelected = model.one(id);
+        model.write(students.map(student => student.id === studentSelected.id ? Object.assign(student,{active:false}): student))
     }
+
 }
 
 module.exports = model
