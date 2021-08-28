@@ -18,5 +18,9 @@
     {
         "id": 5,
         "name": "Vicedirector-Vicedirectora"
+    },
+    {
+        "id": 6,
+        "name": "Alumnos"
     }
 ]
