@@ -18,20 +18,27 @@ const model = {
         courses: element.courses.map(course => modelCourse.one(course))
     })),
     oneWithExtras: id => model.allWithExtras().find(element => element.id === id),
-    /* filterByLevel: level => model.allWithExtras().filter(subject => subject.level == level) */
-    /* findOne: (field, value) => model.allWithExtras().filter(element => element[field] === value) */
+    filterByLevel: level => model.allWithExtras().filter(subject => subject.level.find(element => element.id === level) != null),
 }
-/* 
-subjects = [{
-    level: 'secundaria',
-    ID: '2'
-  } 
-]
+/*
 
-filter(subjects => subjects.level.includes(id))
+subject{
+    level = [
+        {
+            level: 'secundaria',
+            ID: '2'
+        } 
+    ]
+}
+
+subject{
+    level = [2]
+}
+
+filter(subject => subject.level.includes(id))
  */
 
 
-console.log(model.filterByLevel(2));
+console.log(model.filterByLevel(1));
 
 module.exports = model;
