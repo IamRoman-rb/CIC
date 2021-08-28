@@ -2,6 +2,9 @@ const blog = {
     index: (req,res) => {
         return res.render("blogs/index",{})
     },
+    show: (req,res) => {
+        return res.render("blogs/detail",{})
+    },
     create: (req,res) => {
         return res.render("blogs/create",{})
     },

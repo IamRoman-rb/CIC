@@ -5,6 +5,9 @@ const controller = {
     },
     register: (req, res) => {
         return res.render("users/register")
+    },
+    profile: (req, res) => {
+        return res.render("users/profile")
     }
 }
 

@@ -4,6 +4,7 @@ const homeworks = require('../controllers/homeworks');
 
 router.get('/', homeworks.index);
 router.get('/nueva', homeworks.create);
+router.get('/:id', homeworks.show);
 router.get('/editar/:id', homeworks.edit);
 
 router.post('/guardar', homeworks.store);

@@ -2,7 +2,7 @@ const {Router} = require('express')
 const router = Router();
 const blog = require('../controllers/blog');
 
-
+router.get('/', blog.index);
 router.get('/nueva', blog.create);
 router.get('/editar/:id', blog.edit);
 

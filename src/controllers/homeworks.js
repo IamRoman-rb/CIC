@@ -2,6 +2,9 @@ const controller = {
     index: (req,res) => {
         return res.render("homeworks/index",{})
     },
+    show: (req,res) => {
+        return res.render("homeworks/detail",{})
+    },
     create: (req,res) => {
         return res.render("homeworks/new")
     },
