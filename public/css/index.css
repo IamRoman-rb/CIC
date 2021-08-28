@@ -93,8 +93,8 @@ section#carousel-buttons a{
     transition: all .5s ease-in-out;
 }
 section#carousel-buttons a:hover{
-    background-color: grey;
-    border: 1px solid grey;
+    background-color: #048ABF;
+    border: 1px solid #048ABF;
     color: whitesmoke;    
     transform: scale(1.2);
 }
