@@ -1,5 +1,5 @@
-const controller = {
-    
+const student = require('../models/student');
+const controller = {    
     login: (req, res) => {
         return res.render("users/login")
     },
@@ -8,7 +8,15 @@ const controller = {
     },
     profile: (req, res) => {
         return res.render("users/profile")
+    },
+    save: (req, res) => {
+        let newStudent = student.create(req.body)
+        return res.redirect("/usuario/ingresar")
+    },
+    access: (req, res) => {
+        return res.send(req.body)
     }
+
 }
 
-module.exports = (controller);
+module.exports = controller;
