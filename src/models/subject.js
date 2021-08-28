@@ -3,6 +3,7 @@ const fs = require("fs");
 
 const modelLevel = require("./level");
 const modelCourse = require ("./course");
+const modelTeacher = require("./teacher");
 
 const model = {
     directory: path.resolve(__dirname, "../data", "subjects.json"),
@@ -19,26 +20,11 @@ const model = {
     })),
     oneWithExtras: id => model.allWithExtras().find(element => element.id === id),
     filterByLevel: level => model.allWithExtras().filter(subject => subject.level.find(element => element.id === level) != null),
-}
-/*
-
-subject{
-    level = [
-        {
-            level: 'secundaria',
-            ID: '2'
-        } 
-    ]
+    filterByCourse: course => model.allWithExtras().filter(subject => subject.courses.find(element => element.id === course) != null),
+    filterByTeacher: subject => modelTeacher.allWithExtras().filter( teacher => teacher.subjects.filter(element => element.id === subject).length != 0),
 }
 
-subject{
-    level = [2]
-}
 
-filter(subject => subject.level.includes(id))
- */
-
-
-console.log(model.filterByLevel(1));
+console.log(model.filterByTeacher(2));
 
 module.exports = model;
