@@ -16,7 +16,6 @@ module.exports = (req,res,next) => {
     } else{
         styles.push("index")
     }
-    console.log("styles", styles)
     res.locals.styles = styles
 
     next()
