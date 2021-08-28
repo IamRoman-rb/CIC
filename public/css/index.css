@@ -68,35 +68,31 @@ p.info{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    color: #666;
+    color: #666; 
     margin: 0.9375rem 0;
-}
-section#carousel-buttons{
+} 
+article#carousel-buttons{ 
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 0.5rem 0;
 }
-section#carousel-buttons a{
+article#carousel-buttons a{
+    width: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
     padding: 0.5rem;
-    margin: 0 0.2rem;
-    border: 1px solid white;
     background-color: white;
-    border-radius: 100%;
     text-decoration: none;
     color: black;
+    border-radius: .5rem;
+    outline: none;
     transition: all .5s ease-in-out;
 }
-section#carousel-buttons a:hover{
+article#carousel-buttons a:hover{
     background-color: #048ABF;
-    border: 1px solid #048ABF;
-    color: whitesmoke;    
-    transform: scale(1.2);
+    color: whitesmoke;
 }
 main h2{
     width: 100%;
@@ -123,6 +119,9 @@ section.info-tarea-and-news{
 @media screen and (min-width: 768px) {
     article.files{
         width: 25%;
+    }
+    article#carousel-buttons a{
+        width: 10vw;
     }
 }
 @media screen and (min-width: 1200px) {
