@@ -1,4 +1,4 @@
-const student = require('../models/student');
+const student = require('../models/students');
 const controller = {    
     login: (req, res) => {
         return res.render("users/login")
