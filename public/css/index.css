@@ -29,7 +29,7 @@ article.files{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 1rem 0.5rem;
+    margin: .5rem 0.5rem;
     transition: all .5s ease-in-out;
 }
 article.files:hover{
@@ -53,32 +53,64 @@ section.info-tarea-and-news{
     color: black;
 }
 p.titulo{
-    /* width: 30%; */
     display: flex;
     flex-flow: row wrap;
     padding-top: 0.3rem;
 }
 p.cronometro{
+    font-size: .7rem;
     display: flex;
-    /* width: 100%; */
     align-self: flex-end;
     justify-content: flex-end;
 }
 p.info{
-    display: flex;
-    flex-flow: row wrap;
     width: 100%;
-    color: #666; 
-    margin: 0.9375rem 0;
-} 
-article#carousel-buttons{ 
+    color: #666;
+    margin: .5rem 0;
+}
+section.buttons-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: .5rem;
+}
+a.detalle{
+    width: 5rem;
+    text-align: center;
+    background-color: #048ABF;
+    color: white;
+    padding: .3rem;
+    margin-top: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+a.download{
+    width: 5rem;
+    text-align: center;
+    background-color: #3EB595;
+    color: white;
+    padding: .3rem;
+    margin-top: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+a.detalle:hover{
+    background-color: #103D88;
+}
+a.download:hover{
+    background-color: #018067;
+}
+article#button-redirect-list{ 
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 0.5rem 0;
 }
-article#carousel-buttons a{
-    width: 15vw;
+article#button-redirect-list a{
+    width: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +122,7 @@ article#carousel-buttons a{
     outline: none;
     transition: all .5s ease-in-out;
 }
-article#carousel-buttons a:hover{
+article#button-redirect-list a:hover{
     background-color: #048ABF;
     color: whitesmoke;
 }
@@ -120,8 +152,15 @@ section.info-tarea-and-news{
     article.files{
         width: 25%;
     }
-    article#carousel-buttons a{
+    article#button-redirect-list a{
         width: 10vw;
+    }
+    a.detalle{
+        width: 4rem;
+        margin-right: .3rem;
+    }
+    a.download{
+        width: 4rem;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -130,6 +169,12 @@ section.info-tarea-and-news{
     }
     section.info-tarea{
         height: 5rem;
+    }
+    a.detalle{
+        width: 4.5rem;
+    }
+    a.download{
+        width: 4.5rem;
     }
     article.news{
         width: 25%;

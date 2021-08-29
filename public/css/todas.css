@@ -25,16 +25,17 @@ section#lista-de-tareas{
     flex-flow: row wrap;
 }
 article.tareas{
-    width: 80%;
+    width: 60%;
     display: flex;
     align-items: center;
+    flex-flow: column;
     background-color: white;
     border-radius: .5rem;
     padding: .5rem;
     margin-bottom: .5rem;
 }
 article.tareas figure{
-    width: 40%;
+    width: 70%;
     height: 100%;
 }
 article.tareas figure img{
@@ -43,7 +44,7 @@ article.tareas figure img{
     border-radius: .5rem;
 }
 section.info-tarea{
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -60,7 +61,7 @@ p.cronometro{
     display: flex;
     justify-content: flex-end;
     color: black;
-    margin-top: .5rem;
+    margin: .5rem 0;
 }
 p.info{
     color: #666; 
@@ -97,7 +98,7 @@ a.detalle:hover{
     background-color: #103D88;
 }
 a.download:hover{
-    background-color: #2DD641;
+    background-color: #018067;
 }
 @media screen and (min-width: 768px) {
     main#main-list{
@@ -128,6 +129,7 @@ a.download:hover{
     }
     article.tareas{
         width: 100%;
+        flex-flow: row;
     }
     section.info-tarea{
         width: 60%;
@@ -135,8 +137,8 @@ a.download:hover{
 }
 @media screen and (min-width: 1200px) {
     article.tareas figure{
-        width: 40%;
-        height: 75%;
+        width: 30%;
+        height: 90%;
     }
     article.tareas figure img{
         width: 100%;
