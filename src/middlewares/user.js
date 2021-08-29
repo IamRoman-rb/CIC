@@ -5,7 +5,7 @@ module.exports = (req,res,next) => {
     let user = null;
 
     if(req.cookies != undefined && req.cookies.user != undefined) {
-        let email = String(req.body.email);
+        let email = String(req.cookies.user);
         let domain = email.trim().split('@');
         let check = domain.includes('cic.com');
         if(check){

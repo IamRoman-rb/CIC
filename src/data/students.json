@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 1,
+    "nombre": "Roman ",
+    "apellido": "Borla",
+    "usuario": "romancito",
+    "email": "Roman.borla2004@gmail.com",
+    "password": "45812361",
+    "role": 6,
+    "active": true
+  }
+]
