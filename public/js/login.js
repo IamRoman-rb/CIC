@@ -1,8 +1,7 @@
-let inputPassword = document.querySelectorAll(".formulario-login-password")
-let btnPassword = document.querySelector("#view-password")
+let inputPassword = Array.from(document.querySelectorAll(".formulario-login-password"))
+let btnPassword = Array.from(document.querySelectorAll("#view-password"))
 
-btnPassword.addEventListener("click",e => {
+btnPassword.forEach((btn,index) => btn.addEventListener("click",e => {
     e.preventDefault();
-    console.log("hola")
     inputPassword[index].getAttribute("type") == "password" ?  inputPassword[index].setAttribute("type","text") : inputPassword[index].setAttribute("type","password") 
-})
+}))
