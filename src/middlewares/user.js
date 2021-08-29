@@ -5,10 +5,17 @@ module.exports = (req,res,next) => {
     let user = null;
 
     if(req.cookies != undefined && req.cookies.user != undefined) {
-        let email = req.cookies.email;
-        let domain = email.trim().split('@')[1];
+        let email = String(req.body.email);
+        let domain = email.trim().split('@');
         let check = domain.includes('cic.com');
-        user = check ? manager.search("email", email) != null ? manager.search("email", email) : teacher.search("email", email) != null ? teacher.search("email", email) : null : student.search("email", email);  
+        if(check){
+            user = manager.search("email", email)
+            if(user == null){
+                user = teacher.search("email", email)
+            }
+        }else{
+            user = student.search("email", email)
+        }
         req.session.user = user
     }
 

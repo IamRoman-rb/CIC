@@ -17,10 +17,18 @@ const controller = {
     },
     access: (req, res) => {
         let email = String(req.body.email);
-        let domain = email.trim().split('@')[1];
+        let domain = email.trim().split('@');
         let check = domain.includes('cic.com');
-        let user = check ? manager.search("email", email) != null ? manager.search("email", email) : teacher.search("email", email) != null ? teacher.search("email", email) : null : student.search("email", email);  
-       
+        let user =  null;
+        if(check){
+            user = manager.search("email", email)
+            if(user == null){
+                user = teacher.search("email", email)
+            }
+        }else{
+            user = student.search("email", email)
+        }
+
         if(user == null){
             return res.render('users/login',{
                 errors:{
@@ -38,7 +46,7 @@ const controller = {
             })
         }else{
             req.session.user = user
-            res.cookie('user',req.body.email,{maxAge: new Date() + 1000*60*60*24*31*12})
+            res.cookie('user',req.body.email,{maxAge:32140800000})
             return res.redirect("/")
         }
     }

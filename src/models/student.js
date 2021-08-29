@@ -5,7 +5,7 @@ const model = {
     directory: path.resolve(__dirname, "../data", "students.json"),
     all: () =>JSON.parse(fs.readFileSync(model.directory)),
     one: (id) => model.all().find(element => element.id == id),
-    search: (field, value) => model.all().filter(element => element[field].toLowerCase().includes(value.toLowerCase())),
+    search: (field, value) => model.all().find(element => element[field].toLowerCase().includes(value.toLowerCase())),
     count: () => model.all().length > 0 ? model.all().length : 0,
     generate: () => model.count() > 0 ? model.one(model.count() - 1).id + 1 : 1,
     write: data => fs.writeFileSync(model.directory, JSON.stringify(data, null,2)),

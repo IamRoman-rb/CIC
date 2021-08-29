@@ -11,7 +11,7 @@ const model = {
         level: element.level.map(l => modelLevel.one(l))
     })),
     oneWidthExtra: id => model.allWidthExtras().find(element => element.id === id),
-    search: (field, value) => model.allWidthExtras().filter(element => element[field].toLowerCase().includes(value.toLowerCase())),
+    search: (field, value) => model.allWidthExtras().find(element => element[field].toLowerCase().includes(value.toLowerCase())),
 }
 
 module.exports = model
