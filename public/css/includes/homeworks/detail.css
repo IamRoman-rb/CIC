@@ -1,4 +1,4 @@
-main{
+#main-detail{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,106 +8,45 @@ section#card{
     width: 90%;
     display: flex;
     justify-content: center;
+    flex-flow: column;
     background-color: white;
     border-radius: .5rem;
     padding: .5rem;
     margin: 1rem 0;
 }
-article#card-detaill{
-    width: 100%;
-}
-section#cabecera{
-    width: 100%;
+section#card #cabecera{
     display: flex;
-    justify-content: space-between;
 }
-section#cabecera p#titulo{
-    font-weight: 700;
-    text-align: center;
-}
-section#cabecera p#fecha{
-    text-align: end;
-}
-section#img{
-    display: flex;
-    justify-content: center;
-}
-section#img figure{
-    width: 90%;
-}
-section#img figure img{
-    width: 100%;
-}
-section#info-detaill{
-    width: 100%;
-}
-section#info-detaill p{
-    color: #666;
-    margin: 1rem;
-}
-article#button-redirect-detaill{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-article#button-redirect-detaill a{
-    width: 20vw;
+section#card #imagen{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
-    margin: 1rem 0;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: .5rem;
-    outline: none;
-    transition: all .5s ease-in-out;
 }
-article#button-redirect-detaill a:hover{
-    background-color: #048ABF;
-    color: whitesmoke;
+
+section#card #imagen img{
+    max-width: 100%;
 }
+
+section#card #contenido .titulo{
+    display: none;
+}
+section#card #contenido .fecha{
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
-    section#card{
-        width: 70%;
-    }
+    
 }
+
 @media screen and (min-width: 1200px) {
-    article#card-detaill{
-        width: 100%;
+    section#card #cabecera{
+        display: none;
+    }
+
+    section#card #contenido .titulo{
         display: flex;
     }
-    section#cabecera{
-        width: 100%;
+    section#card #contenido .fecha{
         display: flex;
-    }
-    section#cabecera p#titulo{
-        font-weight: 700;
-        text-align: center;
-    }
-    section#cabecera p#fecha{
-        text-align: end;
-    }
-    section#img{
-        display: flex;
-        justify-content: flex-start;
-    }
-    section#img figure{
-        width: 90%;
-    }
-    section#img figure img{
-        width: 100%;
-    }
-    section#info-detaill{
-        width: 100%;
-    }
-    section#info-detaill p{
-        margin: 1rem;
-    }
-    article#button-redirect-detaill{
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
 }

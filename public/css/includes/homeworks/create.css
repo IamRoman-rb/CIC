@@ -1,14 +1,14 @@
-main{
+#main-create{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
-h1{
+#main-create h1{
     width: 100%;
     text-align: center;
 }
-hr{
+#main-create hr{
     width: 80%;
 }
 label#file {

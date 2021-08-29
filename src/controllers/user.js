@@ -1,4 +1,4 @@
-const student = require('../models/students');
+const student = require('../models/student');
 const controller = {    
     login: (req, res) => {
         return res.render("users/login")
@@ -15,8 +15,8 @@ const controller = {
     },
     access: (req, res) => {
         return res.send(req.body)
+        
     }
-
+    
 }
-
 module.exports = controller;
