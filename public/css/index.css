@@ -33,7 +33,7 @@ article.files{
     transition: all .5s ease-in-out;
 }
 article.files:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
     transform: scale(1.03);
 }
 article.files figure img{
