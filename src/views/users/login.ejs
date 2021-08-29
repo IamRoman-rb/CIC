@@ -10,9 +10,19 @@
             <i class="fas fa-user-alt"></i>
             <input type="text" class="formulario-login" placeholder="Nombre">
             <i class="fas fa-envelope"></i>
-            <input type="email" class="formulario-login" placeholder="Email">
+            <input type="email" class="formulario-login" placeholder="Email" value="<%= locals.errors != undefined && locals.errors.email != undefined ? locals.old.email : null%>">
+            <% if (locals.errors != undefined && locals.errors.email) { %>
+                <p>
+                    <%= locals.errors.email %> 
+                </p> 
+            <% } %>
             <i class="fas fa-lock"></i>
             <input type="password" class="formulario-login-password" placeholder="Contraseña">
+            <% if (locals.errors != undefined && locals.errors.password) { %>
+             <p>
+                <%= locals.errors.password %> 
+             </p> 
+            <% } %>
             <fieldset>
                 <button type="button" id="view-password"><i class="fas fa-eye"></i></button>
             </fieldset>
