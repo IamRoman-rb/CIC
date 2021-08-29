@@ -6,13 +6,13 @@ const model = {
     directory: path.resolve(__dirname, "../data", "courses.json"),
     all:  () => JSON.parse(fs.readFileSync(model.directory)),
 
-    allWidthExtra:() => model.all().map(course => Object.assign(course,{
+    allWithExtras:() => model.all().map(course => Object.assign(course,{
         level: levelModel.one(course.level)
     })),
     one: id => model.all().find(element => element.id == id),
-    oneWidthExtra: id => model.allWidthExtra().find(element => element.id == id),
-    filterByField: (prop,value) => model.allWidthExtra().filter(course => course[prop] == value), 
-    searchByField: (field,value) => model.allWidthExtra().find(course => course[field] == value)
+    oneWithExtras: id => model.allWithExtras().find(element => element.id == id),
+    filterByField: (prop,value) => model.allWithExtras().filter(course => course[prop] == value), 
+    searchByField: (field,value) => model.allWithExtras().find(course => course[field] == value)
 }
 
 module.exports = model
