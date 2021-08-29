@@ -71,72 +71,11 @@ section#comentarios button:hover{
     background-color: #FFEB4D;
     color: black;
 }
-/* section#copy{
-    width: 100%;
-    overflow: hidden;
-}
-h2{
-    width: 100%;
-    text-align: center;
-    margin: 1.3rem 0;
-    font-size: 1.5rem;
-
-}
-ul#slider{
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-ul#slider li{
-    width: 70%;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    margin: .5rem .5rem;
-    border-radius: .5rem;
-}
-ul#slider li img{
-    width: 40vw;
-}
-ul#slider li p{
-    padding-top: 1rem;
-    font-size: 1.3rem;
-}
-ul#buttons-slider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-ul#buttons-slider a{
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: #048ABF;
-    color: white;
-    margin: .5rem;
-} */
 @media screen and (min-width: 768px) {
     hr{
         margin: auto;
         width: 55%;
     }
-    /* ul#slider li{
-        width: 35%;
-        padding: .5rem;
-    }
-    ul#slider li img{
-        width: 25vw;
-    } */
 }
 @media screen and (min-width: 1200px) {
-    /* ul#slider li{
-        width: 30%;
-        padding: .2rem;
-    }
-    ul#slider li img{
-        width: 20vw;
-    } */
 }

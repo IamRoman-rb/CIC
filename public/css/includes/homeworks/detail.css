@@ -5,7 +5,7 @@
     flex-flow: row wrap;
 }
 section#card{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -16,6 +16,13 @@ section#card{
 }
 section#card #cabecera{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+section#card #cabecera .titulo{
+    font-size: 1.3rem;
+    font-weight: bolder;
 }
 section#card #imagen{
     display: flex;
@@ -24,29 +31,112 @@ section#card #imagen{
 }
 
 section#card #imagen img{
-    max-width: 100%;
+    max-width: 90%;
+    border-radius: .5rem;
 }
-
+section#card article#contenido{
+    padding: .5rem;
+}
 section#card #contenido .titulo{
     display: none;
 }
 section#card #contenido .fecha{
     display: none;
 }
-
+article#section-info{
+    width: 100%;
+}
+article#section-info span{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+article#section-info span i{
+    color: #3EB595;
+    padding-right: .5rem;
+    font-size: 1.3rem;
+}
+section.button-download{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+a.download{
+    width: 5rem;
+    text-align: center;
+    background-color: #3EB595;
+    color: white;
+    padding: .3rem;
+    margin-top: .5rem;
+    border-radius: .5rem;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+a.download:hover{
+    background-color: #018067;
+}
+article#button-redirect-list{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+article#button-redirect-list a{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #048ABF;
+    color: white;
+    text-decoration: none;
+    border-radius: .5rem;
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+article#button-redirect-list a:hover{
+    background-color: #FFEB4D;
+    color: black;
+}
 @media screen and (min-width: 768px) {
-    
+    section#card{
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    section#card{
+        width: 80%;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
     section#card #cabecera{
         display: none;
     }
-
+    section#card #imagen{
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    section#card article#contenido{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        border: 1px solid #666;
+        border-radius: .5rem;
+    }
     section#card #contenido .titulo{
         display: flex;
     }
     section#card #contenido .fecha{
         display: flex;
+    }
+    a.download{
+        margin-top: 0;
+    }
+    article#button-redirect-list a{
+        width: 10vw;
     }
 }
