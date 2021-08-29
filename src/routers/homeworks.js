@@ -1,9 +1,9 @@
 const {Router} = require('express')
 const router = Router();
 const homeworks = require('../controllers/homeworks');
-const storage = require("../middlewares/fileMiddlewares");
+const file = require("../middlewares/files.js");
 const multer = require('multer');
-const upload = multer({storage: storage("homeworks")});
+const upload = multer({storage: file("homeworks")});
 
 router.get('/todas', homeworks.index);
 router.get('/nueva', homeworks.create);
