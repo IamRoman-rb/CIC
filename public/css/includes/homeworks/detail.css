@@ -67,7 +67,7 @@ a.download{
     text-align: center;
     background-color: #3EB595;
     color: white;
-    padding: .3rem;
+    padding: .5rem;
     margin-top: .5rem;
     border-radius: .5rem;
     outline: none;
@@ -129,6 +129,8 @@ article#button-redirect-list a:hover{
     }
     section#card #contenido .titulo{
         display: flex;
+        font-weight: bold;
+        margin-bottom: .5rem;
     }
     section#card #contenido .fecha{
         display: flex;

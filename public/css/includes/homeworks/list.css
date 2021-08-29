@@ -19,6 +19,14 @@ select.selectores-list{
     outline: none;
     border-radius: .5rem;
 }
+select.selectores-list::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+  }
+select.selectores-list::-webkit-scrollbar-thumb{
+    background-color: #048ABF;
+    border-radius: 1rem;
+  }
 section#lista-de-tareas{
     display: flex;
     justify-content: center;
