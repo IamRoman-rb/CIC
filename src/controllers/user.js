@@ -16,7 +16,7 @@ const controller = {
         return res.redirect("/usuario/ingresar")
     },
     access: (req, res) => {
-        let email = req.body.email;
+        let email = String(req.body.email);
         let domain = email.trim().split('@')[1];
         let check = domain.includes('cic.com');
         let user = check ? manager.search("email", email) != null ? manager.search("email", email) : teacher.search("email", email) != null ? teacher.search("email", email) : null : student.search("email", email);  

@@ -8,16 +8,16 @@
         <hr>
         <form action="/usuario/ingresar" method="post" id="form-login">
             <i class="fas fa-user-alt"></i>
-            <input type="text" class="formulario-login" placeholder="Nombre">
+            <input type="text" name="user" id="user" class="formulario-login" placeholder="Nombre">
             <i class="fas fa-envelope"></i>
-            <input type="email" class="formulario-login" placeholder="Email" value="<%= locals.errors != undefined && locals.errors.email != undefined ? locals.old.email : null%>">
+            <input type="email" name="email" id="email" class="formulario-login" placeholder="Email" value="<%= locals.errors != undefined && locals.errors.email != undefined ? locals.old.email : null%>">
             <% if (locals.errors != undefined && locals.errors.email) { %>
                 <p>
                     <%= locals.errors.email %> 
                 </p> 
             <% } %>
             <i class="fas fa-lock"></i>
-            <input type="password" class="formulario-login-password" placeholder="Contraseña">
+            <input type="password" name="password" id="password" class="formulario-login-password" placeholder="Contraseña">
             <% if (locals.errors != undefined && locals.errors.password) { %>
              <p>
                 <%= locals.errors.password %> 
