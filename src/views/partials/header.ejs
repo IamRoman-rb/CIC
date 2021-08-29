@@ -6,9 +6,18 @@
     <nav id="icons">
         <a href="#"><i class="fas fa-times"></i></a>
         <a href="/"><i class="fas fa-home"></i></a>
-        <a href="/usuario/unirse"><i class="fas fa-user"></i></a>
-        <a href="/tareas/nueva"><i class="fas fa-plus"></i></a>
-        <a href="/noticias/nueva"><i class="far fa-newspaper"></i></i></a>
+        <% if (user != null) { %>
+            <a href="/usuario/profile"><i class="fas fa-user"></i></a>
+        <% } else { %>        
+            <a href="/usuario/unirse"><i class="fas fa-user"></i></a>
+        <% } %>
+        <% if (user != null && user.role != 6) { %>
+            <a href="/tareas/nueva"><i class="fas fa-plus"></i></a>
+            <a href="/noticias/nueva"><i class="far fa-newspaper"></i></i></a>
+        <% } else if (user != null && user.role == 6) { %>
+            <a href="/tareas/todas"><i class="fas fa-book"></i></a>
+            <a href="/noticias/todas"><i class="fas fa-newspaper"></i></i></a>
+        <% } %> 
     </nav>
     
     <nav id="burguer-menu">
