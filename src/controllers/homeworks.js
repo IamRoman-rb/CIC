@@ -12,7 +12,7 @@ const controller = {
         return res.render("homeworks/edit",{})
     },
     store: (req,res) => {
-        return res.send({data:req.body})
+        return res.send({data:req.body,files:req.files})
     },
     update: (req,res) => {
         return res.send({data:req.body})
