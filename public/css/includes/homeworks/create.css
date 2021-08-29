@@ -45,6 +45,14 @@ form#form-create-file fieldset textarea{
     overflow-y: scroll;
     resize: none;
 }
+form#form-create-file fieldset textarea::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+  }
+  form#form-create-file fieldset textarea::-webkit-scrollbar-thumb{
+    background-color: #D90B1C;
+    border-radius: 1rem;
+  }
 form input{
     width: 90%;
     height: 2.15rem;

@@ -93,6 +93,14 @@ textarea{
     outline: none;
     resize: none;
 }
+textarea::-webkit-scrollbar{
+    width: .8rem;
+    background-color: transparent;
+  }
+  textarea::-webkit-scrollbar-thumb{
+    background-color: #56268D;
+    border-radius: 1rem;
+  }
 section#buttons-news{
     width: 80%;
     display: flex;

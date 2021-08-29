@@ -37,3 +37,14 @@ article#contenedor_carga{
   form{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
 }
+
+
+/* SCROLL PERSONALIZADO */
+body::-webkit-scrollbar{
+  width: .8rem;
+  background-color: gray;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #048ABF;
+  border-radius: 1rem;
+}
