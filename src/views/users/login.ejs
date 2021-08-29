@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head")  %> 
+<body>
+    <%- include("../partials/header")  %>
+    <main id="login">
+        <h1>Ingresa a Tu Cuenta</h1>
+        <hr>
+        <form action="" id="form-login">
+            <i class="fas fa-user-alt"></i>
+            <input type="text" class="formulario-login" placeholder="Nombre">
+            <i class="fas fa-envelope"></i>
+            <input type="email" class="formulario-login" placeholder="Email">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="formulario-login-password" placeholder="Contraseña">
+            <fieldset>
+                <button type="button" id="view-password"><i class="fas fa-eye"></i></button>
+            </fieldset>
+            <section id="buttons-login">
+                <button type="reset" class="button-login" id="button-delete"><i class="fas fa-trash"></i></button>
+                <button type="submit" class="button-login" id="button-submit"><i class="fas fa-share-square"></i></button>
+            </section>
+        </form>
+    </main>
+    <%- include("../partials/footer")  %>
+</body>
+</html>

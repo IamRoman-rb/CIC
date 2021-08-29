@@ -3,7 +3,7 @@
     <%- include("../partials/head")  %> 
 <body>
     <%- include("../partials/header")  %>
-    <main>
+    <main id="register">
         <h1>Crea Tu Cuenta</h1>
         <hr>
         <form action="" id="form-register">
@@ -16,9 +16,15 @@
             <i class="fas fa-envelope"></i>
             <input type="email" class="formulario" placeholder="Email">
             <i class="fas fa-lock"></i>
-            <input type="password" class="formulario" placeholder="Contraseña">
+            <input type="password" class="formulario-register-password" placeholder="Contraseña">
+                <fieldset>
+                    <button type="button" class="view-password-register"><i class="fas fa-eye"></i></button>
+                </fieldset>
             <i class="fas fa-lock"></i>
-            <input type="password" class="formulario" placeholder="Repetir Contraseña">
+            <input type="password" class="formulario-register-password" placeholder="Repetir Contraseña">
+                <fieldset>
+                    <button type="button" class="view-password-register"><i class="fas fa-eye"></i></button>
+                </fieldset>
             <section id="buttons-register">
                 <button type="reset" class="button-register" id="button-delete"><i class="fas fa-trash"></i></button>
                 <button type="submit" class="button-register" id="button-submit"><i class="fas fa-share-square"></i></button>
@@ -26,7 +32,7 @@
         </form>
         <nav id="button-login">
             <h2 id="mensaje-button-redirect">Si ya tenes una cuenta</h2>
-            <a href="">Ingresa</a>
+            <a href="/usuario/ingresar">Ingresa</a>
         </nav>
     </main>
     <%- include("../partials/footer")  %>

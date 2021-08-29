@@ -1,23 +1,23 @@
-main{
+main#register{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
-h1{
+main#register h1{
     width: 100%;
     text-align: center;
 }
-hr{
+main#register hr{
     width: 80%;
 }
-form#form-register{
+main#register form#form-register{
     width: 60%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-form input{
+main#register form input.formulario{
     color: #3EB595;
     width: 90%;
     height: 2.15rem;
@@ -28,16 +28,49 @@ form input{
     padding: 0.5rem;
     transition: all .1s ease-in-out;
 }
-form input:focus{
+main#register form input:focus{
     border-bottom: 3px solid #3EB595;
     outline: #3EB595;
 }
-section#buttons-register{
+main#register form input.formulario-register-password{
+    color: #3EB595;
+    width: 80%;
+    height: 2.15rem;
+    border: none;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transition: all .1s ease-in-out;
+}
+main#register form input:focus{
+    border-bottom: 3px solid #3EB595;
+    outline: #3EB595;
+}
+main#register fieldset{
+    width: 10%;
+    display: flex;
+    padding: 0;
+}
+main#register button.view-password-register{
+    width: 100%;
+    height: 2.15rem;
+    color: #3EB595;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    transition: all .5s ease-in-out;
+}
+main#register button.view-password-register:hover{
+    background-color: #3EB595;
+    color: white;
+}
+main#register section#buttons-register{
     width: 80%;
     display: flex;
     justify-content: center;
 }
-form button.button-register{
+main#register form button.button-register{
     width: 30%;
     border: none;
     border-radius: 0.3rem;
@@ -48,26 +81,26 @@ form button.button-register{
     transition: all .5s ease-in-out;
     cursor: pointer;
 }
-i.fa-trash{
+main#register i.fa-trash{
     color: #D90B1C;
 }
-i.fa-share-square{
+main#register i.fa-share-square{
     color: #3EB595;
 }
-form button#button-delete:hover{
+main#register form button#button-delete:hover{
     background-color: #D90B1C;
 }
-form button#button-submit:hover{
+main#register form button#button-submit:hover{
     background-color: #3EB595;
 }
-form button#button-delete:hover .fa-trash{
+main#register form button#button-delete:hover .fa-trash{
     color: whitesmoke;
 }
-form button#button-submit:hover i.fa-share-square{
+main#register form button#button-submit:hover i.fa-share-square{
     color: whitesmoke;
 }
 
-i.fa-user-alt{
+main#register i.fa-user-alt{
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
@@ -80,7 +113,7 @@ i.fa-user-alt{
     border-top-left-radius: 0.3rem;
     border-bottom-left-radius: 0.3rem;
 }
-i.fa-envelope{
+main#register i.fa-envelope{
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
@@ -93,7 +126,7 @@ i.fa-envelope{
     border-top-left-radius: 0.3rem;
     border-bottom-left-radius: 0.3rem;
 }
-i.fa-lock{
+main#register i.fa-lock{
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
@@ -107,14 +140,14 @@ i.fa-lock{
     border-bottom-left-radius: 0.3rem;
 }
 
-nav#button-login{
+main#register nav#button-login{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
 }
-nav#button-login a{
+main#register nav#button-login a{
     color: white;
     background-color: #3EB595;
     padding: .5rem;
@@ -122,11 +155,11 @@ nav#button-login a{
     border-radius: .5rem;
     transition: all .5s ease-in-out;
 }
-nav#button-login a:hover{
+main#register nav#button-login a:hover{
     background-color: #018067;
 }
 @media screen and (min-width: 1200px) {
-    form button.button-register{
+    main#register form button.button-register{
         width: 20%;
     }
 }

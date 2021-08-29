@@ -1,0 +1,160 @@
+main#login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+main#login h1{
+    width: 100%;
+    text-align: center;
+}
+main#login hr{
+    width: 80%;
+}
+main#login form#form-login{
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+main#login form input.formulario-login{
+    color: #0597F2;
+    width: 90%;
+    height: 2.15rem;
+    border: none;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transition: all .1s ease-in-out;
+}
+main#login form input.formulario-login-password{
+    color: #0597F2;
+    width: 80%;
+    height: 2.15rem;
+    border: none;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transition: all .1s ease-in-out;
+}
+main#login form input:focus{
+    border-bottom: 3px solid #0597F2;
+    outline: #0597F2;
+}
+main#login fieldset{
+    width: 10%;
+    display: flex;
+    padding: 0;
+}
+main#login button#view-password{
+    width: 100%;
+    height: 2.15rem;
+    color: #0597F2;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    transition: all .5s ease-in-out;
+}
+main#login button#view-password:hover{
+    background-color: #0597F2;
+    color: white;
+}
+main#login section#buttons-login{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+main#login form button.button-login{
+    width: 30%;
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    background-color: white;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+main#login i.fa-trash{
+    color: #D90B1C;
+}
+main#login i.fa-share-square{
+    color: #3EB595;
+}
+main#login form button#button-delete:hover{
+    background-color: #D90B1C;
+}
+main#login form button#button-submit:hover{
+    background-color: #3EB595;
+}
+main#login form button#button-delete:hover .fa-trash{
+    color: whitesmoke;
+}
+main#login form button#button-submit:hover i.fa-share-square{
+    color: whitesmoke;
+}
+
+main#login i.fa-user-alt{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0597F2;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+main#login i.fa-envelope{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0597F2;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+main#login i.fa-lock{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0597F2;
+    width: 10%;
+    height: 2.15rem;
+    background-color: white;
+    border-right: grey solid 1px;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+main#login nav#button-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+main#login nav#button-login a{
+    color: white;
+    background-color: #0597F2;
+    padding: .5rem;
+    margin: 0 .5rem;
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
+}
+main#login nav#button-login a:hover{
+    background-color: #018067;
+}
+@media screen and (min-width: 1200px) {
+    main#login form button.button-register{
+        width: 20%;
+    }
+}
