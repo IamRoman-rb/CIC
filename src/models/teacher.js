@@ -25,6 +25,4 @@ const model = {
 }
 
 
-console.log(model.filterBySubject(1));
-
 module.exports = model;

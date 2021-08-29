@@ -29,6 +29,7 @@ app.use(session({
 //Middlewares Customs
 
 app.use(require("./middlewares/styles"));
+app.use(require("./middlewares/user"));
 
 //Websites Routes Requires
 const main = require("./routers/main");
