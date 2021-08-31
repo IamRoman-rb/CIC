@@ -62,3 +62,10 @@ inputsProfile.forEach(input => input.addEventListener("blur",e =>{
     
     name == "password" ? target.setAttribute("type","password") : null;
 }))
+
+
+document.forms["usuario-actualizar"].addEventListener('submit',e =>{
+    e.preventDefault();
+    Array.from(document.forms["usuario-actualizar"].elements).filter(input => input.getAttribute("disabled") != undefined).forEach(input => input.removeAttribute("disabled"));
+    document.forms["usuario-actualizar"].submit()
+})

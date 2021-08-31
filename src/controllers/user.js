@@ -3,6 +3,7 @@ const manager = require('../models/manager')
 const student = require('../models/student')
 const level = require('../models/level')
 const course = require('../models/course')
+const subject = require('../models/subject')
 const controller = {    
     login: (req, res) => {
         return res.render("users/login")
@@ -13,7 +14,8 @@ const controller = {
     profile: (req, res) => {
         return res.render("users/profile",{
             levels: level.all(),
-            courses: course.all()
+            courses: course.all(),
+            subjects: subject.all()
         })
     },
     save: (req, res) => {
@@ -60,7 +62,36 @@ const controller = {
         delete req.session.user;
         return res.redirect("/");    
     },
+    update: (req, res) => {
+        let user = null;
+        let data = req.body;
+        if(req.body.role == 6){
+            user = student.search("email", data.email)
+            return res.send(req.body,req.files)
+        }else{
+            user = manager.search("email", data.email)
+            if(user == null){
+                user = teacher.search("email", data.email)
+            }
+        }
 
+        if(user != null){
+            data.levels = Array.from(data.levels).map(level => parseInt(level))
+            if(user.role != 6 && user.role != 4){
+                manager.update(user.id, data)
+            }else if(user.role != 6 && user.role == 4){
+                teacher.update(user.id, data)
+            }else{
+                if(req.files != undefined && req.files.length > 0){
+                    data.avatar = req.files.find(file => String(file.fieldname).toLowerCase().includes("img-profile")).filename
+                }
+                student.modify(user.id,data)
+            }
+        }
+
+        return res.redirect("/usuario/salir");
+
+    }
     
 }
 module.exports = controller;

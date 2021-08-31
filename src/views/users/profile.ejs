@@ -5,7 +5,7 @@
     <%- include("../partials/header")  %>
     <main id="profile"> 
         <h1>Bienvenido a tu Perfil Escolar</h1>
-        <form action="/usuario/actualizar?_method=PUT" method="post" enctype="multipart/form-data" id="usuario-actualizar">
+        <form action="/usuario/actualizar?_method=PUT" method="post"  <% if (user.role == 6) { %> enctype="multipart/form-data" <% } %> id="usuario-actualizar">
             <input type="hidden" name="role" value="<%= user.role  %>">
             <% if (user.role == 6) { %>
                 <label id="avatar" for="img-profile">
@@ -51,7 +51,7 @@
             </label>
 
             <% if (user.role != 6) { %>
-                <% if (user.levels.map(level => level.id).length > 0) { %>
+                <% if (user.levels != undefined && user.levels.map(level => level.id).length > 0) { %>
                     <section class="form-options">
                         <% levels.forEach(level => { %>
                             <% if (user.levels.map(level => level.id).includes(level.id)) { %>
@@ -64,7 +64,7 @@
                     </section>
                 <% } %>
 
-                <% if (user.courses.map(course => course.id).length > 0) { %>
+                <% if (user.courses != undefined && user.courses.map(course => course.id).length > 0) { %>
                     <section class="form-options">    
                         <% courses.forEach(course => { %>
                             <% if (user.courses.map(course => course.id).includes(course.id)) { %>
@@ -76,6 +76,20 @@
                         <% }) %>
                     </section>
                 <% } %>
+
+                <% if (user.subjects != undefined && user.subjects.map(subject => subject.id).length > 0) { %>
+                    <section class="form-options">
+                        <% subjects.forEach(subject => { %>
+                            <% if (user.subjects.map(subject => subject.id).includes(subject.id)) { %>
+                                <label class="form-checkbox" for="level-<%= subject.id %>">
+                                    <input checked type="checkbox" name="levels" id="level-<%= subject.id %>" value="<%= subject.id %>">
+                                    <span> <%= subject.name %></span>
+                                </label>
+                            <% } %>
+                        <% }) %>
+                    </section>
+                <% } %>
+
             <% } %>
             <section class="form-btns">
                 <a href="/usuario/salir" class="btn-exit">

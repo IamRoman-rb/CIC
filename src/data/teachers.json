@@ -1,302 +1,527 @@
 [
     {
         "id": 1,
-        "name":"Mecha",
-        "email":"mecha@cic.com",
-        "password":"cic2021",
-        "role": 4,
-        "levels":[2],
-        "courses":[7, 8, 10, 11, 12],
-        "subjects": [6, 12, 20, 23]
+        "name": "Mecha",
+        "email": "mecha@cic.com",
+        "password": "cic2021",
+        "role": "4",
+        "levels": [
+            2
+        ],
+        "courses": [
+            "7",
+            "8",
+            "10",
+            "11",
+            "12"
+        ],
+        "subjects": [
+            6,
+            12,
+            20,
+            23
+        ]
     },
     {
         "id": 2,
-        "name":"Hugo",
-        "email":"hugo@cic.com",
-        "password":"cic2021",
+        "name": "Hugo",
+        "email": "hugo@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[8 , 9, 12],
-        "subjects": [4]
+        "levels": [
+            2
+        ],
+        "courses": [
+            8,
+            9,
+            12
+        ],
+        "subjects": [
+            4
+        ]
     },
     {
         "id": 3,
-        "name":"Anneris",
-        "email":"anneris@cic.com",
-        "password":"cic2021",
+        "name": "Anneris",
+        "email": "anneris@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[10, 11, 12],
-        "subjects": [13, 26]
+        "levels": [
+            2
+        ],
+        "courses": [
+            10,
+            11,
+            12
+        ],
+        "subjects": [
+            13,
+            26
+        ]
     },
     {
         "id": 4,
-        "name":"Lorena",
-        "email":"lorena@cic.com",
-        "password":"cic2021",
+        "name": "Lorena",
+        "email": "lorena@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[10, 11, 12],
-        "subjects": [1, 8, 11]
+        "levels": [
+            2
+        ],
+        "courses": [
+            10,
+            11,
+            12
+        ],
+        "subjects": [
+            1,
+            8,
+            11
+        ]
     },
     {
         "id": 5,
-        "name":"Facundo",
-        "email":"facundo@cic.com",
-        "password":"cic2021",
+        "name": "Facundo",
+        "email": "facundo@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[8, 10, 11, 12],
-        "subjects": [2, 16]
+        "levels": [
+            2
+        ],
+        "courses": [
+            8,
+            10,
+            11,
+            12
+        ],
+        "subjects": [
+            2,
+            16
+        ]
     },
     {
         "id": 6,
-        "name":"Karina",
-        "email":"karina@cic.com",
-        "password":"cic2021",
+        "name": "Karina",
+        "email": "karina@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[11, 12],
-        "subjects": [3, 10]
+        "levels": [
+            2
+        ],
+        "courses": [
+            11,
+            12
+        ],
+        "subjects": [
+            3,
+            10
+        ]
     },
     {
         "id": 7,
-        "name":"Maximiliano",
-        "email":"maximiliano@cic.com",
-        "password":"cic2021",
+        "name": "Maximiliano",
+        "email": "maximiliano@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[10, 11 ,12],
-        "subjects": [5]
+        "levels": [
+            2
+        ],
+        "courses": [
+            10,
+            11,
+            12
+        ],
+        "subjects": [
+            5
+        ]
     },
     {
         "id": 8,
-        "name":"Rosana",
-        "email":"rosana@cic.com",
-        "password":"cic2021",
+        "name": "Rosana",
+        "email": "rosana@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[12],
-        "subjects": [7]
+        "levels": [
+            2
+        ],
+        "courses": [
+            12
+        ],
+        "subjects": [
+            7
+        ]
     },
     {
         "id": 9,
-        "name":"Corina",
-        "email":"corina@cic.com",
-        "password":"cic2021",
+        "name": "Corina",
+        "email": "corina@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 8, 10, 12],
-        "subjects": [9]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            8,
+            10,
+            12
+        ],
+        "subjects": [
+            9
+        ]
     },
     {
         "id": 10,
-        "name":"Daniela",
-        "email":"daniela@cic.com",
-        "password":"cic2021",
+        "name": "Daniela",
+        "email": "daniela@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 10, 11],
-        "subjects": [4]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            10,
+            11
+        ],
+        "subjects": [
+            4
+        ]
     },
     {
         "id": 10,
-        "name":"Paula",
-        "email":"paula@cic.com",
-        "password":"cic2021",
+        "name": "Paula",
+        "email": "paula@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 8, 9, 10, 11],
-        "subjects": [15, 16, 24]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            8,
+            9,
+            10,
+            11
+        ],
+        "subjects": [
+            15,
+            16,
+            24
+        ]
     },
     {
         "id": 11,
-        "name":"Estrella",
-        "email":"estrella@cic.com",
-        "password":"cic2021",
+        "name": "Estrella",
+        "email": "estrella@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[11],
-        "subjects": [14]
+        "levels": [
+            2
+        ],
+        "courses": [
+            11
+        ],
+        "subjects": [
+            14
+        ]
     },
     {
         "id": 12,
-        "name":"Andrea",
-        "email":"andrea@cic.com",
-        "password":"cic2021",
+        "name": "Andrea",
+        "email": "andrea@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[9],
-        "subjects": [9]
+        "levels": [
+            2
+        ],
+        "courses": [
+            9
+        ],
+        "subjects": [
+            9
+        ]
     },
     {
         "id": 13,
-        "name":"Camila",
-        "email":"camila@cic.com",
-        "password":"cic2021",
+        "name": "Camila",
+        "email": "camila@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[9, 10],
-        "subjects": [12, 17]
+        "levels": [
+            2
+        ],
+        "courses": [
+            9,
+            10
+        ],
+        "subjects": [
+            12,
+            17
+        ]
     },
     {
         "id": 14,
-        "name":"German",
-        "email":"german@cic.com",
-        "password":"cic2021",
+        "name": "German",
+        "email": "german@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[10],
-        "subjects": [18]
+        "levels": [
+            2
+        ],
+        "courses": [
+            10
+        ],
+        "subjects": [
+            18
+        ]
     },
     {
         "id": 15,
-        "name":"Isabel",
-        "email":"isabel@cic.com",
-        "password":"cic2021",
+        "name": "Isabel",
+        "email": "isabel@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 8, 9],
-        "subjects": [1]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            8,
+            9
+        ],
+        "subjects": [
+            1
+        ]
     },
     {
         "id": 16,
-        "name":"Alicia",
-        "email":"alicia@cic.com",
-        "password":"cic2021",
+        "name": "Alicia",
+        "email": "alicia@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[9],
-        "subjects": [15]
+        "levels": [
+            2
+        ],
+        "courses": [
+            9
+        ],
+        "subjects": [
+            15
+        ]
     },
     {
         "id": 17,
-        "name":"Lala",
-        "email":"lala@cic.com",
-        "password":"cic2021",
+        "name": "Lala",
+        "email": "lala@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 9],
-        "subjects": [14, 19]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            9
+        ],
+        "subjects": [
+            14,
+            19
+        ]
     },
     {
         "id": 18,
-        "name":"Jimena",
-        "email":"jimena@cic.com",
-        "password":"cic2021",
+        "name": "Jimena",
+        "email": "jimena@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[9],
-        "subjects": [15]
+        "levels": [
+            2
+        ],
+        "courses": [
+            9
+        ],
+        "subjects": [
+            15
+        ]
     },
     {
         "id": 19,
-        "name":"Christian",
-        "email":"christian@cic.com",
-        "password":"cic2021",
+        "name": "Christian",
+        "email": "christian@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[8, 9],
-        "subjects": [5]
+        "levels": [
+            2
+        ],
+        "courses": [
+            8,
+            9
+        ],
+        "subjects": [
+            5
+        ]
     },
     {
         "id": 20,
-        "name":"Ines",
-        "email":"ines@cic.com",
-        "password":"cic2021",
+        "name": "Ines",
+        "email": "ines@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[9],
-        "subjects": [1]
+        "levels": [
+            2
+        ],
+        "courses": [
+            9
+        ],
+        "subjects": [
+            1
+        ]
     },
     {
         "id": 21,
-        "name":"Carolina",
-        "email":"carolina@cic.com",
-        "password":"cic2021",
+        "name": "Carolina",
+        "email": "carolina@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[8],
-        "subjects": [22]
+        "levels": [
+            2
+        ],
+        "courses": [
+            8
+        ],
+        "subjects": [
+            22
+        ]
     },
     {
         "id": 22,
-        "name":"Maricel",
-        "email":"maricel@cic.com",
-        "password":"cic2021",
+        "name": "Maricel",
+        "email": "maricel@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 8],
-        "subjects": [20]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            8
+        ],
+        "subjects": [
+            20
+        ]
     },
     {
         "id": 23,
-        "name":"Andrea V.",
-        "email":"andreaV@cic.com",
-        "password":"cic2021",
+        "name": "Andrea V.",
+        "email": "andreaV@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[8],
-        "subjects": [12]
+        "levels": [
+            2
+        ],
+        "courses": [
+            8
+        ],
+        "subjects": [
+            12
+        ]
     },
     {
         "id": 24,
-        "name":"Guadalupe",
-        "email":"guadalupe@cic.com",
-        "password":"cic2021",
+        "name": "Guadalupe",
+        "email": "guadalupe@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 8],
-        "subjects": [1]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            8
+        ],
+        "subjects": [
+            1
+        ]
     },
     {
         "id": 25,
-        "name":"Marcela",
-        "email":"marcela@cic.com",
-        "password":"cic2021",
+        "name": "Marcela",
+        "email": "marcela@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7, 8],
-        "subjects": [21]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7,
+            8
+        ],
+        "subjects": [
+            21
+        ]
     },
     {
         "id": 26,
-        "name":"Christian G.",
-        "email":"christianG@cic.com",
-        "password":"cic2021",
+        "name": "Christian G.",
+        "email": "christianG@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7],
-        "subjects": [5]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7
+        ],
+        "subjects": [
+            5
+        ]
     },
     {
         "id": 27,
-        "name":"Sergio",
-        "email":"sergio@cic.com",
-        "password":"cic2021",
+        "name": "Sergio",
+        "email": "sergio@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7],
-        "subjects": [22]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7
+        ],
+        "subjects": [
+            22
+        ]
     },
     {
         "id": 28,
-        "name":"Sandra",
-        "email":"sandra@cic.com",
-        "password":"cic2021",
+        "name": "Sandra",
+        "email": "sandra@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7],
-        "subjects": [5]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7
+        ],
+        "subjects": [
+            5
+        ]
     },
     {
         "id": 29,
-        "name":"Javier",
-        "email":"javier@cic.com",
-        "password":"cic2021",
+        "name": "Javier",
+        "email": "javier@cic.com",
+        "password": "cic2021",
         "role": 4,
-        "levels":[2],
-        "courses":[7],
-        "subjects": [24]
+        "levels": [
+            2
+        ],
+        "courses": [
+            7
+        ],
+        "subjects": [
+            24
+        ]
     }
 ]
