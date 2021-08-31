@@ -81,8 +81,8 @@
                     <section class="form-options">
                         <% subjects.forEach(subject => { %>
                             <% if (user.subjects.map(subject => subject.id).includes(subject.id)) { %>
-                                <label class="form-checkbox" for="level-<%= subject.id %>">
-                                    <input checked type="checkbox" name="levels" id="level-<%= subject.id %>" value="<%= subject.id %>">
+                                <label class="form-checkbox" for="subject-<%= subject.id %>">
+                                    <input checked type="checkbox" name="subjects" id="subject-<%= subject.id %>" value="<%= subject.id %>">
                                     <span> <%= subject.name %></span>
                                 </label>
                             <% } %>
