@@ -15,7 +15,7 @@ label#img-profile{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, 0.309);
     color: #FF604D;
     padding: 1rem;
     margin: 1rem 0;
@@ -24,10 +24,117 @@ label#img-profile{
     outline: none;
     transition: all .5s ease-in-out;
   }
+  label#img-profile:hover{
+    background-color: rgba(0, 0, 0, 0.118);
+    color: #fa523f;
+  }
   input#profile {
     position: relative;
     display: none;
 }
 label#img-profile i{
     font-size: 5rem;
+}
+main#profile form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+main#profile form label{
+    width: 80%;
+    margin: .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+main#profile form label i.fa-user-graduate,
+main#profile form label i.fa-user-alt,
+main#profile form label i.fa-user-alt,
+main#profile form label i.fa-envelope,
+main#profile form label i.fa-user-lock{
+    width: 10%;
+    height: 2.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background-color: white;
+    color: #FF604D;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+main#profile form label button{
+    width: 10%;
+    height: 2.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background-color: white;
+    color: #FF604D;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+main#profile form label button:hover{
+    background-color: #FF604D;
+    color: white;
+}
+main#profile form label input{
+    width: 80%;
+    height: 2.15rem;
+    border: none;
+    outline: none;
+    transition: all .1s ease-in-out ;
+}
+main#profile form label input:focus{
+    border-bottom: solid 3px #FF604D;
+    outline: #FF604D;
+}
+main#profile form label select{
+    width: 50%;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+}
+main#profile form section#button-exit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main#profile form section#button-exit button{
+    width: 5rem;
+    padding: .5rem;
+    margin: 0 .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+main#profile form section#button-exit button.button-exit-delete{
+    background-color: white;
+    color: #D90B1C;
+    transition: all .3s ease-in-out;
+}
+main#profile form section#button-exit button.button-exit-delete:hover{
+    background-color: #D90B1C;
+    color: white;
+}
+main#profile form section#button-exit button#button-submit{
+    background-color: white;
+    color: #3EB595;
+    transition: all .3s ease-in-out;
+}
+main#profile form section#button-exit button#button-submit:hover{
+    background-color: #3EB595;
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    main#profile form label{
+        width: 60%;
+    }
 }
