@@ -80,7 +80,7 @@
                 <% if (user.subjects != undefined && user.subjects.map(subject => subject.id).length > 0) { %>
                     <section class="form-options">
                         <% subjects.forEach(subject => { %>
-                            <% if (user.subjects.map(subject => subject.id).includes(subject.id)) { %>
+                            <% if (user.subjects.map(subject => parseInt(subject.id)).includes(subject.id)) { %>
                                 <label class="form-checkbox" for="subject-<%= subject.id %>">
                                     <input checked type="checkbox" name="subjects" id="subject-<%= subject.id %>" value="<%= subject.id %>">
                                     <span> <%= subject.name %></span>

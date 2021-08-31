@@ -77,6 +77,8 @@ const controller = {
 
         if(user != null){
             data.levels = Array.from(data.levels).map(level => parseInt(level))
+            data.courses = Array.from(data.courses).map(course => parseInt(course))
+            data.subjects = Array.from(data.subjects).map(subject => parseInt(subject))
             if(user.role != 6 && user.role != 4){
                 manager.update(user.id, data)
             }else if(user.role != 6 && user.role == 4){
