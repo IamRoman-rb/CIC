@@ -5,47 +5,94 @@
     <%- include("../partials/header")  %>
     <main id="profile"> 
         <h1>Bienvenido a tu Perfil Escolar</h1>
-        <label id="img-profile">
-            <i class="fas fa-camera"></i>
-            <input name="img-profile" type="file" id="profile" multiple>
-        </label>
-        <form action="">
-            <label for="">
-                <i class="fas fa-user-graduate"></i><input type="text"><button><i class="fas fa-pencil-alt"></i></button>
+        <form action="/usuario/actualizar?_method=PUT" method="post" enctype="multipart/form-data" id="usuario-actualizar">
+            <input type="hidden" name="role" value="<%= user.role  %>">
+            <% if (user.role == 6) { %>
+                <label id="avatar" for="img-profile">
+                    <% if (user.avatar == undefined) { %>
+                        <i class="fas fa-camera"></i>
+                    <% } else { %>
+                        <figure>
+                            <img src="/uploads/student/<%= user.avatar %>" alt="CIC">
+                        </figure>
+                    <% } %>
+                    <input name="img-profile" type="file" id="img-profile">
+                </label>
+            <% } %>
+            <label class="form-label" for="name">
+                <i class="form-icons fas fa-user-graduate"></i>
+                <input class="form-input" disabled type="text" name="name" id="name" placeholder="Nombre y Apellido" value="<%= user.name %>">
+                <button type="button" class="btn-labels">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
             </label>
-            <label for="">
-                <i class="fas fa-user-alt"></i><input type="text"><button type="button"><i class="fas fa-pencil-alt"></i></button>
+            <% if (user.role == 6) { %>
+            <label class="form-label" for="user">
+                <i class="form-icons fas fa-user-alt"></i>
+                <input class="form-input" disabled type="text" name="username" id="username" placeholder="Usuario" value="<%= user.username %>">
+                <button type="button" class="btn-labels">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
             </label>
-            <label for="">
-                <i class="fas fa-envelope"></i><input type="email"><button type="button"><i class="fas fa-pencil-alt"></i></button>
+            <% } %>
+            <label class="form-label" for="email">
+                <i class="form-icons fas fa-envelope"></i>
+                <input class="form-input" disabled type="email" name="email" id="email" placeholder="Email" value="<%= user.email %> ">
+                <button type="button" class="btn-labels">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
             </label>
-            <label for="">
-                <select name="" id="">
-                    <option value="jardin">jardin</option>
-                    <option value="primaria">primaria</option>
-                    <option value="secundaria">secundaria</option>
-                </select>
+            <label class="form-label" for="">
+                <i class="form-icons fas fa-user-lock"></i>
+                <input class="form-input" disabled type="password" name="password" placeholder="Contraseña" id="password" autocomplete="off" value="<%= user.password %>">
+                <button type="button" class="btn-labels">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
             </label>
-            <label for="">
-                <select name="" id="">
-                    <option value="">1ro</option>
-                    <option value="">2do</option>
-                    <option value="">3ro</option>
-                    <option value="">4to</option>
-                    <option value="">5to</option>
-                    <option value="">6to</option>
-                </select>
-            </label>
-            <label for="">
-                <i class="fas fa-user-lock"></i><input type="password"><button type="button"><i class="fas fa-pencil-alt"></i></button>
-            </label>
-            <section id="button-exit">
-                <button type="button" class="button-exit-delete"><i class="fas fa-door-open"></i></button>
-                <button type="reset" class="button-exit-delete"><i class="fas fa-times-circle"></i></button>
-                <button type="submit" id="button-submit"><i class="fas fa-sign-in-alt"></i></button>
+
+            <% if (user.role != 6) { %>
+                <% if (user.levels.map(level => level.id).length > 0) { %>
+                    <section class="form-options">
+                        <% levels.forEach(level => { %>
+                            <% if (user.levels.map(level => level.id).includes(level.id)) { %>
+                                <label class="form-checkbox" for="level-<%= level.id %>">
+                                    <input checked type="checkbox" name="levels" id="level-<%= level.id %>" value="<%= level.id %>">
+                                    <span> <%= level.name %></span>
+                                </label>
+                            <% } %>
+                        <% }) %>
+                    </section>
+                <% } %>
+
+                <% if (user.courses.map(course => course.id).length > 0) { %>
+                    <section class="form-options">    
+                        <% courses.forEach(course => { %>
+                            <% if (user.courses.map(course => course.id).includes(course.id)) { %>
+                            <label class="form-checkbox small" for="course-<%= course.id %>">
+                                <input checked type="checkbox" name="courses" id="course-<%= course.id %>" value="<%= course.id %>">
+                                <span> <%= course.name %></span>
+                            </label>
+                            <% } %>
+                        <% }) %>
+                    </section>
+                <% } %>
+            <% } %>
+            <section class="form-btns">
+                <a href="/usuario/salir" class="btn-exit">
+                    <i class="fas fa-door-open"></i>
+                </a>
+                
+                <button type="reset" class="btn-reset">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                
+                <button type="submit" class="btn-submit" id="button-submit">
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
             </section>
         </form>
     </main>
     <%- include("../partials/footer")  %>
+    <script src="/js/profile.js"></script>
 </body>
 </html>

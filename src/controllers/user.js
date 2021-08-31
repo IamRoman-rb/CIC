@@ -1,6 +1,8 @@
 const teacher = require('../models/teacher')
 const manager = require('../models/manager')
 const student = require('../models/student')
+const level = require('../models/level')
+const course = require('../models/course')
 const controller = {    
     login: (req, res) => {
         return res.render("users/login")
@@ -9,7 +11,10 @@ const controller = {
         return res.render("users/register")
     },
     profile: (req, res) => {
-        return res.render("users/profile")
+        return res.render("users/profile",{
+            levels: level.all(),
+            courses: course.all()
+        })
     },
     save: (req, res) => {
         let newStudent = student.create(req.body)
@@ -49,7 +54,13 @@ const controller = {
             res.cookie('user',req.body.email,{maxAge:32140800000})
             return res.redirect("/")
         }
-    }
+    },
+    logout: (req, res) => {
+        res.cookie('user',req.session.user.email,{maxAge:-1});
+        delete req.session.user;
+        return res.redirect("/");    
+    },
+
     
 }
 module.exports = controller;
