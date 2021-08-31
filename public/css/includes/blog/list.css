@@ -1,17 +1,17 @@
-main#main-list{
+main#new{
     width: 100%;
     background-color: #D0F2F2;
 }
-main#main-list section#formularios-list{
+main#new section#filter-new{
     display: flex;
     justify-content: center;
 }
-main#main-list section#formularios-list form{
+main#new section#filter-new form{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
 }
-main#main-list select.selectores-list{
+main#new select.selectores-list-new{
     width: 6rem;
     margin: .5rem;
     background-color: white;
@@ -19,20 +19,20 @@ main#main-list select.selectores-list{
     outline: none;
     border-radius: .5rem;
 }
-main#main-list select.selectores-list::-webkit-scrollbar{
+main#new select.selectores-list-new::-webkit-scrollbar{
     width: .8rem;
     background-color: transparent;
   }
-  main#main-list select.selectores-list::-webkit-scrollbar-thumb{
+  main#new select.selectores-list-new::-webkit-scrollbar-thumb{
     background-color: #048ABF;
     border-radius: 1rem;
   }
-main#main-list section#lista-de-tareas{
+main#new section#news-list{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
-main#main-list article.tareas{
+main#new article.new{
     width: 60%;
     display: flex;
     align-items: center;
@@ -42,44 +42,44 @@ main#main-list article.tareas{
     padding: .5rem;
     margin-bottom: .5rem;
 }
-main#main-listarticle.tareas figure{
+main#new article.new figure{
     width: 70%;
     height: 100%;
 }
-main#main-list article.tareas figure img{
+main#new article.new figure img{
     width: 100%;
     height: 80%;
     border-radius: .5rem;
 }
-main#main-list article.tareas section.info-tarea{
+main#new article.new section.info-tarea{
     width: 90%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     margin: 0 .5rem;
 }
-main#main-list article.tareas p.titulo{
+main#new article.new p.titulo{
     width: 100%;
     display: flex;
     justify-content: flex-start;
     color: black;
 }
-main#main-list article.tareas p.cronometro{
+main#new article.new p.cronometro{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     color: black;
     margin: .5rem 0;
 }
-main#main-list article.tareas p.info{
+main#new article.new p.info{
     color: #666; 
 }
-main#main-list article.tareas section.buttons-list{
+main#new article.new section.button-new{
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-main#main-list article.tareas a.detalle{
+main#new article.new a.detalle{
     width: 5rem;
     text-align: center;
     background-color: #048ABF;
@@ -91,64 +91,56 @@ main#main-list article.tareas a.detalle{
     outline: none;
     transition: all .3s ease-in-out;
 }
-main#main-list article.tareas a.download{
-    width: 5rem;
-    text-align: center;
-    background-color: #3EB595;
-    color: white;
-    padding: .7rem;
-    margin-top: .5rem;
-    border-radius: .5rem;
-    outline: none;
-    transition: all .3s ease-in-out;
-}
-main#main-list article.tareas a.detalle:hover{
+main#new article.new a.detalle:hover{
     background-color: #103D88;
 }
-main#main-list article.tareas a.download:hover{
-    background-color: #018067;
-}
 @media screen and (min-width: 768px) {
-    main#main-list{
+    main#new{
         width: 95%;
-        display: flex
+        display: flex;
+        margin: 1rem 0;
     }
-    main#main-list section#formularios-list{
+    main#new section#filter-new{
         width: 25%;
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
         border-radius: .2rem;
     }
-    main#main-list section#formularios-list form{
+    main#new section#filter-new form{
         width: 100%;
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
     }
-    main#main-list select.selectores-list{
+    main#new select.selectores-list-new{
         width: 90%;
         margin-bottom: 1rem;
     }
-    main#main-list section#lista-de-tareas{
+    main#new section#news-list{
         width: 75%;
         display: flex;
         flex-flow: row wrap;
     }
-    main#main-list article.tareas{
+    main#new article.new{
         width: 100%;
         flex-flow: row;
     }
-    main#main-list section.info-tarea{
+    main#new article.new figure{
+        width: 50%;
+        height: 100%;
+        padding-right: .5rem;
+    }
+    main#new section.info-new{
         width: 60%;
     }
 }
 @media screen and (min-width: 1200px) {
-    main#main-list article.tareas figure{
+    main#new article.new figure{
         width: 30%;
         height: 90%;
     }
-    main#main-list article.tareas figure img{
+    main#new article.new figure img{
         width: 100%;
         height: 100%;
         border-radius: .5rem;

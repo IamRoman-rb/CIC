@@ -4,7 +4,6 @@ main{
     justify-content: center;
     flex-flow: row wrap;
     background-color: #D0F2F2;
-    /* margin: auto;  */
 }
 section#position-files{
     display: flex;
@@ -103,13 +102,13 @@ a.detalle:hover{
 a.download:hover{
     background-color: #018067;
 }
-article#button-redirect-list{ 
+article.button-redirect-list-and-new{ 
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 0.5rem 0;
 }
-article#button-redirect-list a{
+article.button-redirect-list-and-new a{
     width: 20vw;
     display: flex;
     justify-content: center;
@@ -122,7 +121,7 @@ article#button-redirect-list a{
     outline: none;
     transition: all .5s ease-in-out;
 }
-article#button-redirect-list a:hover{
+article.button-redirect-list-and-new a:hover{
     background-color: #048ABF;
     color: whitesmoke;
 }
@@ -147,6 +146,23 @@ article.news img{
 }
 section.info-tarea-and-news{
     width: 100%;
+}
+section.button-detalle-new{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: .5rem 0;
+}
+section.button-detalle-new a{
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: #048ABF;
+    color: white;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+section.button-detalle-new a:hover{
+    background-color: #103D88;
 }
 @media screen and (min-width: 768px) {
     article.files{

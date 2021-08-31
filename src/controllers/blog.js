@@ -1,6 +1,6 @@
 const blog = {
     index: (req,res) => {
-        return res.render("blogs/index",{})
+        return res.render("blogs/list",{})
     },
     show: (req,res) => {
         return res.render("blogs/detail",{})
