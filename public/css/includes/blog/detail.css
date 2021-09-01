@@ -1,0 +1,45 @@
+/*
+    Primero Mobile
+*/
+
+#main-detail{
+    min-height: 50vh;
+    background-color: #D0F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-detail #card{
+    width:calc(50% - 1rem);
+    min-height:calc(50vh - 1rem);
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+/* Tablet 768 a 1024 */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+}
+
+/* Laptop 1025 a 1280 */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    
+}
+
+
+/* Desktop 1366 a 1920 */
+
+@media screen and (min-width: 1366px) and (max-width: 1920px){
+    
+}
+
+/* 2k 1921 a 2048 */
+
+@media screen and (min-width: 1921px) and (max-width: 2048px){
+    
+}

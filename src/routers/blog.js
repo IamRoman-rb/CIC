@@ -4,6 +4,7 @@ const blog = require('../controllers/blog');
 
 router.get('/todas', blog.index);
 router.get('/nueva', blog.create);
+router.get('/ver/:id', blog.show);
 router.get('/editar/:id', blog.edit);
 
 router.post('/guardar', blog.store);
