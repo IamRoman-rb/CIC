@@ -195,4 +195,7 @@ section.button-detalle-new a:hover{
     article.news{
         width: 25%;
     }
+    article.button-redirect-list-and-new a{
+        width: 10vw
+    }
 }
