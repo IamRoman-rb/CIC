@@ -21,16 +21,41 @@
             </label>
             <select name="level" class="selectores">
                 <option value="" disabled>Ciclo</option>
+                <% levels.forEach(l => { %>
+                    <option value="<%= l.id  %>">
+                        <%= l.name %>
+                    </option>
+                <% }) %>
             </select>
             <select name="course" class="selectores">
                 <option value="" disabled>Año</option>
+                <% courses.forEach(c => { %>
+                    <option value="<%= c.id  %>">
+                        <%= c.name %>
+                    </option>  
+                <% }) %>
             </select>
             <select name="subject" class="selectores">
                 <option value="" disabled>Materias</option>
+                <% subjects.forEach(s => { %>
+                    <option value="<%= s.id  %>">
+                        <%= s.name %>
+                    </option>
+                <% }) %>
             </select>
-            <select name="teacher" class="selectores">
-                <option value="" disabled>Profesor/a</option>
-            </select>
+            <% if (user.role != 4) { %>
+                <select name="teacher" class="selectores">
+                    <option value="" disabled>Profesor/a</option>
+                    <% teachers.forEach(t => { %>
+                        <option value="<%= t.id  %>">
+                            <%= t.name %>
+                        </option>
+                    <% }) %>
+                </select>
+            <% } else { %>
+                <i class="fas fa-user-alt"></i>
+                <input name="teacher" type="text" class="formulario" disabled value="<%= user.name  %>">    
+            <% } %>
             <section id="send-file-buttons">
                 <button type="reset" class="button-file" id="button-delete"><i class="fas fa-trash"></i></button>
                 <button type="submit" class="button-file" id="button-submit"><i class="fas fa-share-square"></i></button>
