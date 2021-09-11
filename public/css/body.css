@@ -41,8 +41,8 @@ article#contenedor_carga{
 
 /* SCROLL PERSONALIZADO */
 body::-webkit-scrollbar{
-  width: .8rem;
-  background-color: gray;
+  width: .6rem;
+  background-color: transparent;
 }
 body::-webkit-scrollbar-thumb{
   background-color: #048ABF;

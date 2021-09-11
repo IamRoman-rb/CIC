@@ -172,7 +172,7 @@ main#profile .btn-exit{
     color: #D90B1C;
     transition: all .3s ease-in-out;
 }
-main#profile.btn-exit:hover{
+main#profile .btn-exit:hover{
     background-color: #D90B1C;
     color: white;
 }

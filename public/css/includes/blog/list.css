@@ -51,7 +51,7 @@ main#new article.new figure img{
     height: 80%;
     border-radius: .5rem;
 }
-main#new article.new section.info-tarea{
+main#new article.new section.info-new{
     width: 90%;
     display: flex;
     justify-content: center;

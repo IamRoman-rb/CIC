@@ -18,6 +18,7 @@ section#card-new #cabecera{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .5rem;
     margin-bottom: .5rem;
 }
 section#card-new #cabecera .titulo{
@@ -29,7 +30,6 @@ section#card-new #imagen{
     justify-content: center;
     align-items: center;
 }
-
 section#card-new #imagen img{
     max-width: 90%;
     border-radius: .5rem;
@@ -42,6 +42,9 @@ section#card-new #contenido .titulo{
 }
 section#card-new #contenido .fecha{
     display: none;
+}
+section#card-new #contenido #descripcion{
+    text-align: justify;
 }
 article#section-info{
     width: 100%;
@@ -63,7 +66,7 @@ article#button-redirect-list{
     margin: 0.5rem 0;
 }
 article#button-redirect-list a{
-    width: 20vw;
+    /* width: ; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,10 +118,10 @@ article#button-redirect-list a:hover{
     section#card-new #contenido .fecha{
         display: flex;
     }
-    a.download{
-        margin-top: 0;
+    article#button-redirect-list{ 
+        justify-content: flex-end;
     }
     article#button-redirect-list a{
-        width: 10vw;
+        /* width: 10vw; */
     }
 }
