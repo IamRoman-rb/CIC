@@ -140,7 +140,7 @@
 #main-create section button#button-submit:hover i.fa-share-square{
     color: whitesmoke;
 }
-#main-createi .fa-book{
+#main-create i.fa-book{
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
